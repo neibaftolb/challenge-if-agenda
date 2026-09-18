@@ -136,7 +136,7 @@ body{margin:0!important}
 #merci-if{--navy:#0E3257;--navy-2:#081B30;--sand:#FFD7AA;--sand-2:#F2B44C;--brown:#B07A3A;--ink:#0E3257;--muted:#4A5B6E;--line:#E6E9EF;--cream:#FFF8F1;--white:#fff}
 #merci-if *{box-sizing:border-box}
 html{scroll-behavior:smooth!important}
-#merci-if{margin:0;font-family:"Manrope",-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--white);font-size:17px;line-height:1.55}
+#merci-if{margin:0;font-family:"Manrope",-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--white);font-size:17px;line-height:1.55;text-align:left}
 #merci-if h1,#merci-if h2,#merci-if h3,#merci-if .fl{font-family:"Fliper","Manrope",sans-serif;font-weight:700;line-height:1.12;margin:0;color:var(--navy);letter-spacing:.1px}
 #merci-if h1{font-size:clamp(30px,5.2vw,50px)} #merci-if h2{font-size:clamp(26px,3.6vw,36px)} #merci-if h3{font-size:21px}
 #merci-if p{margin:0 0 14px}
