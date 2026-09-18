@@ -154,8 +154,8 @@ html{scroll-behavior:smooth!important}
 #merci-if .nav .links::-webkit-scrollbar{display:none}
 #merci-if .nav .links a{padding:6px 0;border-bottom:2px solid transparent}
 #merci-if .nav .links a.on{border-color:var(--sand-2)}
-#merci-if .nav .prog{font-size:13px;color:var(--muted);white-space:nowrap}
-#merci-if .nav .prog b{color:var(--navy)}
+#merci-if .nav .etapes{font-size:13px;color:var(--muted);white-space:nowrap}
+#merci-if .nav .etapes b{color:var(--navy)}
 #merci-if .hero{background:linear-gradient(180deg,var(--cream) 0%,#FFFDFB 100%);padding:38px 0 30px;text-align:center}
 #merci-if .hero .caps{margin-bottom:14px}
 #merci-if .hero h1{max-width:820px;margin:0 auto 14px}
@@ -177,7 +177,7 @@ html{scroll-behavior:smooth!important}
 #merci-if .check{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin:26px auto 0;padding:0;list-style:none;max-width:820px}
 #merci-if .check li{display:flex;align-items:center;gap:8px;background:var(--white);border:1px solid var(--line);border-radius:999px;padding:8px 14px 8px 8px;font-weight:700;font-size:15px;color:var(--navy)}
 #merci-if .check .dot{width:26px;height:26px;border-radius:50%;background:var(--sand);color:var(--navy);display:flex;align-items:center;justify-content:center;font-family:"Fliper","Manrope",sans-serif;font-size:14px}
-#merci-if .check li.done .dot{background:#1E9E5A;color:#fff} .check li.done .dot .ico{width:15px;height:15px} .check li.done{text-decoration:line-through;opacity:.75}
+#merci-if .check li.done .dot{background:#1E9E5A;color:#fff} #merci-if .check li.done .dot .ico{width:15px;height:15px} #merci-if .check li.done{text-decoration:line-through;opacity:.75}
 #merci-if .steps{padding:10px 0 20px}
 #merci-if .step{background:var(--white);border:1px solid var(--line);border-radius:22px;padding:30px 28px;margin:26px 0;box-shadow:0 10px 30px rgba(14,50,87,.06);scroll-margin-top:70px}
 #merci-if .step--sand{background:var(--cream);border-color:#F1E3CF}
@@ -223,13 +223,13 @@ html{scroll-behavior:smooth!important}
 #merci-if .faq details[open] summary::after{content:"–"}
 #merci-if .faq details p{color:var(--muted);margin:0 0 14px}
 #merci-if .final{background:var(--navy);color:var(--white);text-align:center;padding:54px 0}
-#merci-if .final h2{color:var(--white)} .final h2 em{font-style:normal;color:var(--sand)}
+#merci-if .final h2{color:var(--white)} #merci-if .final h2 em{font-style:normal;color:var(--sand)}
 #merci-if .final p{color:rgba(255,255,255,.85);max-width:640px;margin:10px auto 24px;font-size:18px}
 #merci-if .legal{background:var(--navy-2);color:rgba(255,255,255,.72);font-size:12.5px;line-height:1.6;padding:30px 0 40px}
-#merci-if .legal p{margin:0 0 10px} .legal a{color:var(--sand)} .legal .links{margin-top:14px}
+#merci-if .legal p{margin:0 0 10px} #merci-if .legal a{color:var(--sand)} #merci-if .legal .links{margin-top:14px}
 #merci-if .legal .links a{margin-right:14px;text-decoration:none}
-@media(max-width:900px){.prog{grid-template-columns:repeat(2,1fr)}.qui{grid-template-columns:1fr}.why{grid-template-columns:1fr}}
-@media(max-width:600px){body{font-size:16px}.hero .dates{font-size:14px;padding:9px 14px;border-radius:18px}.hero .dates strong{font-size:16px;display:block}.step{padding:22px 16px;border-radius:18px}.step .head .big{display:none}.agenda{grid-template-columns:1fr 1fr}.prog{grid-template-columns:1fr}.quiz{height:720px;min-height:720px}.hero{padding:26px 0 24px}.nav .prog{display:none}.count div{min-width:64px}.count b{font-size:24px}}
+@media(max-width:900px){#merci-if .prog{grid-template-columns:repeat(2,1fr)}#merci-if .qui{grid-template-columns:1fr}#merci-if .why{grid-template-columns:1fr}}
+@media(max-width:600px){#merci-if{font-size:16px}#merci-if .hero .dates{font-size:14px;padding:9px 14px;border-radius:18px}#merci-if .hero .dates strong{font-size:16px;display:block}#merci-if .step{padding:22px 16px;border-radius:18px}#merci-if .step .head .big{display:none}#merci-if .agenda{grid-template-columns:1fr 1fr}#merci-if .prog{grid-template-columns:1fr}#merci-if .quiz{height:720px;min-height:720px}#merci-if .hero{padding:26px 0 24px}#merci-if .nav .etapes{font-size:12px}#merci-if .count div{min-width:64px}#merci-if .count b{font-size:24px}}
 </style>
 
 <div id="merci-if" class="dbcif">
@@ -240,7 +240,7 @@ html{scroll-behavior:smooth!important}
     <div class="links">
       <a href="#video">La vidéo</a><a href="#quiz">1 · Quiz</a><a href="#whatsapp">2 · WhatsApp</a><a href="#agenda">3 · Agenda</a><a href="#programme">Programme</a><a href="#faq">FAQ</a>
     </div>
-    <div class="prog" id="prog"><b>0</b>/3 étapes faites</div>
+    <div class="etapes" id="prog"><b>0</b>/3 étapes faites</div>
   </div>
 </nav>
 
