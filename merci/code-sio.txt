@@ -1,0 +1,404 @@
+<!-- PAGE MERCI PUBLIQUE · daronsdubiz.com/merci-challenge-intelligence-financiere (page SIO 44369183, élément rawhtml-3ad841f4)
+     Version du 18-09-2026 : page complète (vidéo Alexandre + Fabien, quiz Smart Funnel, WhatsApp, agenda, programme, FAQ).
+     L'ancien contenu SIO de la page n'est pas supprimé : il est seulement masqué par le <style> ci-dessous (source : etape-2-merci-publique.html du 13-09).
+     Source de ce code : Dropbox › Projets › Darons du BIZ › 5DC › 10 2026 › PAGE MERCI INSCRIPTION › construire_page.py + construire_sio.py -->
+<style>
+#section-494158b3,#text-ee74c961,#row-ffc0a718,#text-98875481,#button-f0ef5c8e,#text-7ccba650,#text-0f0249d7,#text-2661a3bf,#row-5f01c06b,#row-cb88f7cd,#section-eed56274{display:none!important}
+div:has(> #text-ee74c961),div:has(> #row-ffc0a718),div:has(> #text-98875481),div:has(> #button-f0ef5c8e),div:has(> #text-7ccba650),div:has(> #text-0f0249d7),div:has(> #text-2661a3bf),div:has(> #row-5f01c06b),div:has(> #row-cb88f7cd){display:none!important}
+/* Systeme.io : retire les marges des conteneurs autour de ce bloc (sinon vide autour de la page) */
+[id^="section-"]:has(.dbcif),[id^="row-"]:has(.dbcif),[id^="column-"]:has(.dbcif){padding:0!important;margin:0!important;max-width:none!important}
+div:has(> [id^="rawhtml-"] .dbcif),div:has(> [id^="row-"] .dbcif){margin:0!important;padding:0!important;max-width:none!important}
+[id^="section-"]:has(.dbcif) div:has(.dbcif){max-width:none!important;margin-left:0!important;margin-right:0!important;padding-left:0!important;padding-right:0!important}
+body{margin:0!important}
+</style>
+<script>
+(function(){function stop(){var r=document.getElementById('row-ffc0a718');if(!r)return;r.querySelectorAll('video').forEach(function(v){try{v.muted=true;v.pause();v.removeAttribute('autoplay');v.preload='none'}catch(e){}})}stop();document.addEventListener('DOMContentLoaded',stop);window.addEventListener('load',stop);setTimeout(stop,1500)})();
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Event",
+   "name": "Challenge Intelligence Financière",
+   "description": "5 soirées en direct, en ligne et gratuites pour apprendre à faire fructifier votre argent, même en partant de zéro.",
+   "startDate": "2026-10-04T18:00:00+02:00",
+   "endDate": "2026-10-08T19:00:00+02:00",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+   "location": {
+    "@type": "VirtualLocation",
+    "url": "https://www.daronsdubiz.com/challenge-intelligence-financiere"
+   },
+   "image": [
+    "https://neibaftolb.github.io/challenge-if-agenda/merci/merci-inscription-poster.jpg"
+   ],
+   "organizer": {
+    "@type": "Organization",
+    "name": "Darons du Biz",
+    "url": "https://www.daronsdubiz.com"
+   },
+   "performer": [
+    {
+     "@type": "Person",
+     "name": "Alexandre Roth"
+    },
+    {
+     "@type": "Person",
+     "name": "Fabien Blot"
+    }
+   ],
+   "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "EUR",
+    "availability": "https://schema.org/InStock",
+    "url": "https://www.daronsdubiz.com/challenge-intelligence-financiere"
+   },
+   "inLanguage": "fr"
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Est-ce vraiment gratuit ?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Oui. Les 5 soirées sont gratuites et en ligne. Aucun produit n'est proposé pendant le challenge."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Comment je reçois le lien pour assister aux soirées ?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Par email, avant chaque soirée. C'est pour cela qu'il faut ajouter contact@daronsdubiz.com à vos expéditeurs autorisés et vérifier vos spams dès maintenant."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Y aura-t-il un replay ?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Non. Les soirées se vivent en direct, c'est ce qui fait leur valeur. Bloquez le créneau dans votre agenda avec les boutons ci-dessus."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Je débute complètement, est-ce pour moi ?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Oui. Le challenge est fait pour tous les niveaux. Le quiz nous permet justement d'adapter la vidéo que vous recevrez à votre point de départ."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "À quoi sert le quiz ?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "À connaître votre profil investisseur : votre situation, votre horizon et vos objectifs. Vous recevez ensuite une vidéo personnalisée avec les meilleures actions à mettre en place pour vous."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Combien de temps dure chaque soirée ?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Environ 1 heure, à 18 h heure de Paris, du dimanche 4 au jeudi 8 octobre 2026."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Challenge Intelligence Financière",
+     "item": "https://www.daronsdubiz.com/challenge-intelligence-financiere"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Inscription confirmée",
+     "item": "https://www.daronsdubiz.com/merci-challenge-intelligence-financiere"
+    }
+   ]
+  }
+ ]
+}</script>
+<style>
+/* Charte Darons du Biz, calée sur la page d'inscription daronsdubiz.com/challenge-intelligence-financiere :
+   navy #0E3257 · sable #FFD7AA · fond crème dégradé #FFF8F1 → #FFFDFB · titres Fliper · texte Manrope · CTA navy arrondi 22 px */
+@font-face{font-family:"Fliper";src:url("https://immersion.daronsdubiz.com/vsl/fonts/Fliper-Bold.otf") format("opentype");font-weight:700;font-display:swap}
+#merci-if{--navy:#0E3257;--navy-2:#081B30;--sand:#FFD7AA;--sand-2:#F2B44C;--brown:#B07A3A;--ink:#0E3257;--muted:#4A5B6E;--line:#E6E9EF;--cream:#FFF8F1;--white:#fff}
+#merci-if *{box-sizing:border-box}
+html{scroll-behavior:smooth!important}
+#merci-if{margin:0;font-family:"Manrope",-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--white);font-size:17px;line-height:1.55}
+#merci-if h1,#merci-if h2,#merci-if h3,#merci-if .fl{font-family:"Fliper","Manrope",sans-serif;font-weight:700;line-height:1.12;margin:0;color:var(--navy);letter-spacing:.1px}
+#merci-if h1{font-size:clamp(30px,5.2vw,50px)} #merci-if h2{font-size:clamp(26px,3.6vw,36px)} #merci-if h3{font-size:21px}
+#merci-if p{margin:0 0 14px}
+#merci-if .wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+#merci-if .wrap--n{max-width:760px}
+#merci-if .caps{font-size:13px;letter-spacing:2px;text-transform:uppercase;font-weight:700;color:var(--navy)}
+#merci-if .hl{background:linear-gradient(transparent 58%,var(--sand) 58%);padding:0 2px}
+#merci-if .brown{color:var(--brown)}
+#merci-if .topbar{background:var(--sand);text-align:center;padding:12px 16px}
+#merci-if .topbar .caps{margin:0}
+#merci-if .nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:saturate(180%) blur(8px);border-bottom:1px solid var(--line)}
+#merci-if .nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:10px;height:58px}
+#merci-if .nav a{text-decoration:none;color:var(--navy);font-weight:700;font-size:14px;white-space:nowrap}
+#merci-if .nav .links{display:flex;gap:18px;flex:1;min-width:0;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+#merci-if .nav .links::-webkit-scrollbar{display:none}
+#merci-if .nav .links a{padding:6px 0;border-bottom:2px solid transparent}
+#merci-if .nav .links a.on{border-color:var(--sand-2)}
+#merci-if .nav .prog{font-size:13px;color:var(--muted);white-space:nowrap}
+#merci-if .nav .prog b{color:var(--navy)}
+#merci-if .hero{background:linear-gradient(180deg,var(--cream) 0%,#FFFDFB 100%);padding:38px 0 30px;text-align:center}
+#merci-if .hero .caps{margin-bottom:14px}
+#merci-if .hero h1{max-width:820px;margin:0 auto 14px}
+#merci-if .hero .dates{display:inline-block;background:var(--white);border:2px solid var(--sand);border-radius:999px;padding:10px 18px;font-size:16px;color:var(--navy);margin:0 auto 16px}
+#merci-if .hero .dates strong{font-family:"Fliper","Manrope",sans-serif;font-size:18px}
+#merci-if .hero .sub{font-size:19px;color:var(--muted);max-width:680px;margin:0 auto 22px}
+#merci-if .video{position:relative;max-width:900px;margin:0 auto;aspect-ratio:16/9;background:#000;border-radius:18px;overflow:hidden;box-shadow:0 18px 50px rgba(14,50,87,.22)}
+#merci-if .video video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+#merci-if .btn{display:inline-block;text-decoration:none;border-radius:22px;padding:17px 28px;font-weight:800;font-size:18px;line-height:1.15;text-align:center;transition:transform .08s}
+#merci-if .btn:active{transform:scale(.98)}
+#merci-if .btn--plein{background:var(--navy);color:var(--white)}
+#merci-if .btn--plein small{display:block;font-weight:600;font-size:14px;color:var(--white);opacity:.9;margin-top:3px;letter-spacing:.5px}
+#merci-if .btn--plein .fl{color:var(--sand);font-size:22px;letter-spacing:.5px}
+#merci-if .btn--sable{background:var(--sand);color:var(--navy)}
+#merci-if .btn--ligne{background:var(--white);color:var(--navy);border:2px solid var(--navy)}
+#merci-if .btn .ico{width:22px;height:22px;vertical-align:-5px;margin-right:8px}
+#merci-if .btn--bloc{display:block}
+#merci-if .hero .btn{margin-top:22px}
+#merci-if .check{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin:26px auto 0;padding:0;list-style:none;max-width:820px}
+#merci-if .check li{display:flex;align-items:center;gap:8px;background:var(--white);border:1px solid var(--line);border-radius:999px;padding:8px 14px 8px 8px;font-weight:700;font-size:15px;color:var(--navy)}
+#merci-if .check .dot{width:26px;height:26px;border-radius:50%;background:var(--sand);color:var(--navy);display:flex;align-items:center;justify-content:center;font-family:"Fliper","Manrope",sans-serif;font-size:14px}
+#merci-if .check li.done .dot{background:#1E9E5A;color:#fff} .check li.done .dot .ico{width:15px;height:15px} .check li.done{text-decoration:line-through;opacity:.75}
+#merci-if .steps{padding:10px 0 20px}
+#merci-if .step{background:var(--white);border:1px solid var(--line);border-radius:22px;padding:30px 28px;margin:26px 0;box-shadow:0 10px 30px rgba(14,50,87,.06);scroll-margin-top:70px}
+#merci-if .step--sand{background:var(--cream);border-color:#F1E3CF}
+#merci-if .step .head{display:flex;align-items:flex-start;gap:16px;margin-bottom:8px}
+#merci-if .num{flex:none;width:48px;height:48px;border-radius:50%;background:var(--navy);color:var(--sand);display:flex;align-items:center;justify-content:center;font-family:"Fliper","Manrope",sans-serif;font-size:24px}
+#merci-if .step .head .caps{font-size:12px;margin:2px 0 4px;color:var(--brown)}
+#merci-if .step .head .big{flex:none;margin-left:auto;width:44px;height:44px;color:var(--navy);opacity:.9}
+#merci-if .step p.lead{font-size:18px;color:var(--muted)}
+#merci-if .why{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:16px 0 20px;padding:0;list-style:none}
+#merci-if .why li{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:12px 14px;font-size:15px;color:var(--ink)}
+#merci-if .why li b{display:block;color:var(--navy);margin-bottom:2px}
+#merci-if .quiz{border:none;border-radius:16px;display:block;width:100%;height:660px;min-height:660px;background:var(--white);box-shadow:inset 0 0 0 1px var(--line)}
+#merci-if .note--secret{display:flex;gap:12px;align-items:flex-start;background:var(--cream);border-left-color:var(--navy);margin:6px 0 18px}
+#merci-if .note--secret .lock{font-size:22px;line-height:1.2}
+#merci-if .note--secret b{color:var(--navy)}
+#merci-if .note{background:var(--white);border-left:5px solid var(--sand-2);border-radius:12px;padding:14px 16px;margin:0 0 18px;font-size:16px}
+#merci-if .count{display:flex;gap:10px;justify-content:center;margin:6px 0 22px}
+#merci-if .count div{background:var(--navy);color:var(--white);border-radius:14px;min-width:78px;padding:10px 8px;text-align:center}
+#merci-if .count b{display:block;font-family:"Fliper","Manrope",sans-serif;font-size:30px;color:var(--sand);line-height:1}
+#merci-if .count span{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;opacity:.85}
+#merci-if .agenda{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}
+#merci-if .agenda .btn{font-size:15px;padding:14px 10px;border-radius:14px}
+#merci-if .sec{padding:54px 0}
+#merci-if .sec--cream{background:linear-gradient(180deg,#FFFDFB,var(--cream))}
+#merci-if .sec h2{text-align:center;margin-bottom:8px}
+#merci-if .sec .lead{text-align:center;color:var(--muted);font-size:18px;max-width:700px;margin:0 auto 30px}
+#merci-if .prog{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+#merci-if .day{background:var(--white);border:1px solid var(--line);border-radius:18px;padding:18px 16px;display:flex;flex-direction:column;gap:8px}
+#merci-if .day .ico{width:34px;height:34px;color:var(--navy)}
+#merci-if .day .caps{font-size:11px;letter-spacing:1.5px;color:var(--brown)}
+#merci-if .day h3{font-size:19px}
+#merci-if .day p{font-size:14.5px;color:var(--muted);margin:0}
+#merci-if .proof{display:flex;gap:26px;align-items:center;justify-content:center;flex-wrap:wrap;margin-top:8px}
+#merci-if .proof img{height:44px;width:auto}
+#merci-if .proof p{margin:0;font-size:16px}
+#merci-if .qui{display:grid;grid-template-columns:1.1fr 1fr;gap:34px;align-items:center}
+#merci-if .qui img{width:100%;height:auto;border-radius:18px;box-shadow:0 14px 40px rgba(14,50,87,.18)}
+#merci-if .qui p{font-size:17px}
+#merci-if .faq details{border-bottom:1px solid var(--line);padding:6px 0}
+#merci-if .faq summary{cursor:pointer;list-style:none;padding:14px 34px 14px 0;font-weight:800;font-size:18px;color:var(--navy);position:relative}
+#merci-if .faq summary::-webkit-details-marker{display:none}
+#merci-if .faq summary::after{content:"+";position:absolute;right:4px;top:10px;font-size:26px;color:var(--brown);font-weight:600}
+#merci-if .faq details[open] summary::after{content:"–"}
+#merci-if .faq details p{color:var(--muted);margin:0 0 14px}
+#merci-if .final{background:var(--navy);color:var(--white);text-align:center;padding:54px 0}
+#merci-if .final h2{color:var(--white)} .final h2 em{font-style:normal;color:var(--sand)}
+#merci-if .final p{color:rgba(255,255,255,.85);max-width:640px;margin:10px auto 24px;font-size:18px}
+#merci-if .legal{background:var(--navy-2);color:rgba(255,255,255,.72);font-size:12.5px;line-height:1.6;padding:30px 0 40px}
+#merci-if .legal p{margin:0 0 10px} .legal a{color:var(--sand)} .legal .links{margin-top:14px}
+#merci-if .legal .links a{margin-right:14px;text-decoration:none}
+@media(max-width:900px){.prog{grid-template-columns:repeat(2,1fr)}.qui{grid-template-columns:1fr}.why{grid-template-columns:1fr}}
+@media(max-width:600px){body{font-size:16px}.hero .dates{font-size:14px;padding:9px 14px;border-radius:18px}.hero .dates strong{font-size:16px;display:block}.step{padding:22px 16px;border-radius:18px}.step .head .big{display:none}.agenda{grid-template-columns:1fr 1fr}.prog{grid-template-columns:1fr}.quiz{height:720px;min-height:720px}.hero{padding:26px 0 24px}.nav .prog{display:none}.count div{min-width:64px}.count b{font-size:24px}}
+</style>
+
+<div id="merci-if" class="dbcif">
+<div class="topbar"><p class="caps">Inscription confirmée · Challenge en ligne 100 % gratuit · du 4 au 8 octobre 2026</p></div>
+
+<nav class="nav" aria-label="Navigation de la page">
+  <div class="wrap">
+    <div class="links">
+      <a href="#video">La vidéo</a><a href="#quiz">1 · Quiz</a><a href="#whatsapp">2 · WhatsApp</a><a href="#agenda">3 · Agenda</a><a href="#programme">Programme</a><a href="#faq">FAQ</a>
+    </div>
+    <div class="prog" id="prog"><b>0</b>/3 étapes faites</div>
+  </div>
+</nav>
+
+<header class="hero" id="video">
+  <div class="wrap">
+    <p class="caps">Bravo, votre place est réservée</p>
+    <h1>Ne fermez pas cette page <span class="hl">avant d'avoir fait</span> <span class="brown">ces 3 choses.</span></h1>
+    <p class="dates"><span class="ico-cal">📅</span> <strong>Du dimanche 4 au jeudi 8 octobre 2026</strong> · 18 h, heure de Paris · 5 soirées en direct, en ligne, gratuites</p>
+    <p class="sub">Une minute de vidéo avec Alexandre et Fabien, puis trois actions simples. C'est ce qui sépare ceux qui assistent au challenge de ceux qui l'oublient.</p>
+    <div class="video">
+      <video controls playsinline preload="metadata" poster="https://neibaftolb.github.io/challenge-if-agenda/merci/merci-inscription-poster.jpg" aria-label="Message de bienvenue d'Alexandre Roth et Fabien Blot">
+        <source src="https://neibaftolb.github.io/challenge-if-agenda/merci/merci-inscription-challenge-if.mp4" type="video/mp4">
+      </video>
+    </div>
+    <a class="btn btn--plein" href="#quiz"><span class="fl">COMMENCER PAR LE QUIZ</span><small>2 MINUTES · VIDÉO PERSONNALISÉE EN RETOUR</small></a>
+    <ul class="check" id="check">
+      <li data-k="quiz"><span class="dot">1</span>Répondre au quiz</li>
+      <li data-k="wa"><span class="dot">2</span>Rejoindre le groupe WhatsApp</li>
+      <li data-k="cal"><span class="dot">3</span>Bloquer les 5 soirées</li>
+    </ul>
+  </div>
+</header>
+
+<main class="steps">
+ <div class="wrap">
+
+  <section class="step" id="quiz" aria-labelledby="h-quiz">
+    <div class="head"><span class="num">1</span><div><p class="caps">Étape 1 · 2 minutes</p><h2 id="h-quiz">Répondez au quiz : votre profil investisseur</h2></div><svg class="ico big" aria-hidden="true" focusable="false" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M34.6667 12.9939C36.4013 16.6217 36.7306 20.7634 35.591 24.6198C34.4515 28.4761 31.9238 31.7736 28.496 33.8759C25.0681 35.9782 20.9831 36.7362 17.0292 36.0037C13.0753 35.2712 9.53289 33.1001 7.08566 29.9093C4.63842 26.7186 3.45984 22.7344 3.77738 18.7258C4.09492 14.7172 5.88608 10.9683 8.80514 8.20264C11.7242 5.43698 15.5643 3.85063 19.5842 3.74975C23.6041 3.64888 27.5189 5.04062 30.573 7.65638L34.1152 4.11263C34.3497 3.87808 34.6678 3.74631 34.9995 3.74631C35.3312 3.74631 35.6494 3.87808 35.8839 4.11263C36.1185 4.34718 36.2502 4.6653 36.2502 4.99701C36.2502 5.32871 36.1185 5.64683 35.8839 5.88138L20.8839 20.8814C20.6494 21.1159 20.3312 21.2477 19.9995 21.2477C19.6678 21.2477 19.3497 21.1159 19.1152 20.8814C18.8806 20.6468 18.7488 20.3287 18.7488 19.997C18.7488 19.6653 18.8806 19.3472 19.1152 19.1126L23.4464 14.7814C22.2726 14.0051 20.8711 13.6476 19.4689 13.7669C18.0666 13.8862 16.7457 14.4753 15.7199 15.4388C14.6941 16.4022 14.0234 17.6837 13.8166 19.0757C13.6097 20.4678 13.8787 21.8889 14.58 23.109C15.2813 24.3291 16.3739 25.2768 17.6809 25.7987C18.9878 26.3207 20.4327 26.3862 21.7815 25.9848C23.1304 25.5833 24.3042 24.7384 25.1131 23.5868C25.922 22.4352 26.3186 21.0442 26.2386 19.6392C26.2294 19.475 26.2525 19.3107 26.3068 19.1555C26.3611 19.0003 26.4454 18.8573 26.555 18.7347C26.6645 18.6121 26.7972 18.5123 26.9453 18.4409C27.0934 18.3696 27.2541 18.3281 27.4183 18.3189C27.7498 18.3002 28.0752 18.414 28.3228 18.6353C28.4454 18.7448 28.5452 18.8774 28.6165 19.0256C28.6879 19.1737 28.7294 19.3344 28.7386 19.4986C28.8526 21.4873 28.2845 23.4554 27.1284 25.0775C25.9723 26.6997 24.2973 27.8788 22.3803 28.42C20.4632 28.9612 18.4189 28.8321 16.5851 28.054C14.7514 27.276 13.238 25.8955 12.2952 24.1408C11.3523 22.3861 11.0364 20.3622 11.3996 18.4036C11.7629 16.445 12.7835 14.669 14.2929 13.3691C15.8022 12.0692 17.71 11.3232 19.7008 11.2544C21.6915 11.1856 23.6462 11.7981 25.2417 12.9908L28.7964 9.43607C26.1914 7.27325 22.8792 6.14914 19.4959 6.27963C16.1126 6.41012 12.8967 7.78601 10.4661 10.143C8.0354 12.5001 6.56126 15.6721 6.32678 19.0498C6.09231 22.4275 7.11403 25.7727 9.19572 28.443C11.2774 31.1133 14.2723 32.9203 17.6051 33.517C20.9379 34.1137 24.3737 33.458 27.2525 31.6759C30.1314 29.8938 32.2503 27.1108 33.2023 23.8616C34.1544 20.6124 33.8723 17.126 32.4105 14.072C32.2675 13.7728 32.2492 13.4291 32.3597 13.1164C32.4702 12.8038 32.7003 12.5478 32.9995 12.4048C33.2987 12.2619 33.6425 12.2436 33.9551 12.3541C34.2678 12.4645 34.5237 12.6947 34.6667 12.9939Z" fill="currentColor"/>
+</svg></div>
+    <p class="lead">Quelques questions sur votre situation, votre horizon et vos objectifs. En retour, vous recevez une <strong>vidéo personnalisée</strong> avec les meilleures actions à mettre en place pour vous.</p>
+    <div class="note note--secret"><span class="lock">🔒</span><div><b>Vos données sont confidentielles.</b> Vos réponses restent entre vous et nous. Elles ne sont ni partagées, ni vendues, ni publiées, et personne d'autre n'y a accès. Elles servent à une seule chose : préparer votre vidéo personnalisée.</div></div>
+    <!-- Embed Smart Funnel (custom.one), reçu le 18-09 dans le groupe « DDB X SmartFunnel ». Si le domaine change, ne remplacer que l'attribut src. -->
+    <iframe class="quiz" data-customone-embed src="https://test.custom.one/embed/y0ynax8a81" frameborder="0" loading="lazy" title="Quiz : votre profil investisseur"></iframe>
+    <script>
+    (function(){var p=["utm_source","utm_medium","utm_campaign","utm_content","utm_term","fbclid","gclid","ttclid","msclkid","source"],q=new URLSearchParams(window.location.search);
+    Array.prototype.forEach.call(document.querySelectorAll("iframe[data-customone-embed]"),function(f){
+      var u;try{u=new URL(f.src)}catch(e){return}var changed=false;
+      p.forEach(function(k){var v=q.get(k);if(v&&!u.searchParams.has(k)){u.searchParams.set(k,v);changed=true}});
+      if(changed)f.src=u.toString()});
+    })();
+    </script>
+    <p style="text-align:center;margin:16px 0 0"><a class="btn btn--ligne" href="#whatsapp" data-done="quiz">Quiz terminé, étape suivante ↓</a></p>
+  </section>
+
+  <section class="step step--sand" id="whatsapp" aria-labelledby="h-wa">
+    <div class="head"><span class="num">2</span><div><p class="caps">Étape 2 · Gratuit et immédiat</p><h2 id="h-wa">Rejoignez le groupe WhatsApp du challenge</h2></div><svg class="ico big" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 12 12 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7a2.8 2.8 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg></div>
+    <p class="lead">C'est là que tout se passe entre les soirées : les rappels, les réponses à vos questions et <strong>une petite surprise</strong> réservée aux membres du groupe.</p>
+    <ul class="why">
+      <li><b>Les rappels</b>Un message avant chaque soirée, avec le lien du direct.</li>
+      <li><b>Le support</b>Une conseillère répond à vos questions pendant tout le challenge.</li>
+      <li><b>La surprise</b>On ne peut pas tout vous dire ici. Il faut être dans le groupe.</li>
+    </ul>
+    <a class="btn btn--plein btn--bloc" href="https://ddb.best/whatsapp-if" target="_blank" rel="noopener" data-done="wa"><svg class="ico" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 12 12 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7a2.8 2.8 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg>Rejoindre le groupe WhatsApp</a>
+  </section>
+
+  <section class="step" id="agenda" aria-labelledby="h-cal">
+    <div class="head"><span class="num">3</span><div><p class="caps">Étape 3 · Ne ratez pas le direct</p><h2 id="h-cal">Bloquez les 5 soirées et vérifiez vos emails</h2></div><svg class="ico big" aria-hidden="true" focusable="false" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16.25 23.75C16.25 24.0815 16.1183 24.3995 15.8839 24.6339C15.6495 24.8683 15.3315 25 15 25H8.75C8.41848 25 8.10054 24.8683 7.86612 24.6339C7.6317 24.3995 7.5 24.0815 7.5 23.75C7.5 23.4185 7.6317 23.1005 7.86612 22.8661C8.10054 22.6317 8.41848 22.5 8.75 22.5H15C15.3315 22.5 15.6495 22.6317 15.8839 22.8661C16.1183 23.1005 16.25 23.4185 16.25 23.75ZM37.5 18.125V27.5C37.5 28.163 37.2366 28.7989 36.7678 29.2678C36.2989 29.7366 35.663 30 35 30H21.25V35C21.25 35.3315 21.1183 35.6495 20.8839 35.8839C20.6495 36.1183 20.3315 36.25 20 36.25C19.6685 36.25 19.3505 36.1183 19.1161 35.8839C18.8817 35.6495 18.75 35.3315 18.75 35V30H5C4.33696 30 3.70107 29.7366 3.23223 29.2678C2.76339 28.7989 2.5 28.163 2.5 27.5V18.125C2.50289 15.6395 3.49154 13.2566 5.24907 11.4991C7.0066 9.74154 9.38948 8.75289 11.875 8.75H23.75V3.75C23.75 3.41848 23.8817 3.10054 24.1161 2.86612C24.3505 2.6317 24.6685 2.5 25 2.5H30C30.3315 2.5 30.6495 2.6317 30.8839 2.86612C31.1183 3.10054 31.25 3.41848 31.25 3.75C31.25 4.08152 31.1183 4.39946 30.8839 4.63388C30.6495 4.8683 30.3315 5 30 5H26.25V8.75H28.125C30.6105 8.75289 32.9934 9.74154 34.7509 11.4991C36.5085 13.2566 37.4971 15.6395 37.5 18.125ZM18.75 27.5V18.125C18.75 16.3016 18.0257 14.553 16.7364 13.2636C15.447 11.9743 13.6984 11.25 11.875 11.25C10.0516 11.25 8.30295 11.9743 7.01364 13.2636C5.72433 14.553 5 16.3016 5 18.125V27.5H18.75ZM35 18.125C34.9979 16.3023 34.2729 14.5548 32.9841 13.2659C31.6952 11.9771 29.9477 11.2521 28.125 11.25H26.25V22.5C26.25 22.8315 26.1183 23.1495 25.8839 23.3839C25.6495 23.6183 25.3315 23.75 25 23.75C24.6685 23.75 24.3505 23.6183 24.1161 23.3839C23.8817 23.1495 23.75 22.8315 23.75 22.5V11.25H18.2422C19.191 12.1262 19.9481 13.1894 20.4658 14.3726C20.9835 15.5559 21.2505 16.8335 21.25 18.125V27.5H35V18.125Z" fill="currentColor"/>
+</svg></div>
+    <p class="lead">Rendez-vous <strong>du dimanche 4 au jeudi 8 octobre, à 18 h (heure de Paris)</strong>, en direct. Pas de replay.</p>
+    <div class="count" id="count" aria-label="Compte à rebours avant la première soirée"><div><b>--</b><span>jours</span></div><div><b>--</b><span>heures</span></div><div><b>--</b><span>min</span></div><div><b>--</b><span>sec</span></div></div>
+    <div class="note">📩 Le lien de connexion arrive <strong>par email avant chaque soirée</strong>. Allez dans vos emails maintenant (et dans les spams, on ne sait jamais) et ajoutez <strong>contact@daronsdubiz.com</strong> à vos expéditeurs autorisés.</div>
+    <p style="font-weight:800;margin-bottom:10px">Ajoutez les 5 soirées à votre agenda en un clic :</p>
+    <div class="agenda" data-done-group="cal">
+      <a class="btn btn--plein " href="https://neibaftolb.github.io/challenge-if-agenda/challenge-intelligence-financiere.ics" >Apple Calendar</a>
+      <a class="btn btn--plein " href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Challenge+Intelligence+Financi%C3%A8re+%28en+direct%29&dates=20261004T180000%2F20261004T190000&ctz=Europe%2FParis&details=5+soir%C3%A9es+en+direct%2C+en+ligne+et+100+%25+gratuites%2C+du+dimanche+4+au+jeudi+8+octobre+2026%2C+environ+1+h+chaque+soir%2C+avec+Fabien+Blot+et+Alexandre+Roth+%28Darons+du+Biz%29.%0A%0ALe+lien+de+connexion+au+direct+vous+est+envoy%C3%A9+par+email+avant+chaque+soir%C3%A9e.+Page+de+l%27%C3%A9v%C3%A9nement+%3A+https%3A%2F%2Fwww.daronsdubiz.com%2Fchallenge-intelligence-financiere&location=En+ligne&recur=RRULE%3AFREQ%3DDAILY%3BCOUNT%3D5" target="_blank" rel="noopener">Google Agenda</a>
+      <a class="btn btn--ligne " href="https://outlook.live.com/calendar/0/action/compose?rru=addevent&subject=Challenge+Intelligence+Financi%C3%A8re+%28en+direct%29&startdt=2026-10-04T18%3A00%3A00&enddt=2026-10-04T19%3A00%3A00&body=5+soir%C3%A9es+en+direct%2C+en+ligne+et+100+%25+gratuites%2C+du+dimanche+4+au+jeudi+8+octobre+2026%2C+environ+1+h+chaque+soir%2C+avec+Fabien+Blot+et+Alexandre+Roth+%28Darons+du+Biz%29.%0A%0ALe+lien+de+connexion+au+direct+vous+est+envoy%C3%A9+par+email+avant+chaque+soir%C3%A9e.+Page+de+l%27%C3%A9v%C3%A9nement+%3A+https%3A%2F%2Fwww.daronsdubiz.com%2Fchallenge-intelligence-financiere&location=En+ligne&allday=false" target="_blank" rel="noopener">Outlook.com</a>
+      <a class="btn btn--ligne " href="https://outlook.office.com/calendar/0/action/compose?rru=addevent&subject=Challenge+Intelligence+Financi%C3%A8re+%28en+direct%29&startdt=2026-10-04T18%3A00%3A00&enddt=2026-10-04T19%3A00%3A00&body=5+soir%C3%A9es+en+direct%2C+en+ligne+et+100+%25+gratuites%2C+du+dimanche+4+au+jeudi+8+octobre+2026%2C+environ+1+h+chaque+soir%2C+avec+Fabien+Blot+et+Alexandre+Roth+%28Darons+du+Biz%29.%0A%0ALe+lien+de+connexion+au+direct+vous+est+envoy%C3%A9+par+email+avant+chaque+soir%C3%A9e.+Page+de+l%27%C3%A9v%C3%A9nement+%3A+https%3A%2F%2Fwww.daronsdubiz.com%2Fchallenge-intelligence-financiere&location=En+ligne&allday=false" target="_blank" rel="noopener">Outlook pro (Microsoft 365)</a>
+      <a class="btn btn--ligne " href="https://calendar.yahoo.com/?v=60&title=Challenge+Intelligence+Financi%C3%A8re+%28en+direct%29&st=20261004T180000&et=20261004T190000&desc=5+soir%C3%A9es+en+direct%2C+en+ligne+et+100+%25+gratuites%2C+du+dimanche+4+au+jeudi+8+octobre+2026%2C+environ+1+h+chaque+soir%2C+avec+Fabien+Blot+et+Alexandre+Roth+%28Darons+du+Biz%29.%0A%0ALe+lien+de+connexion+au+direct+vous+est+envoy%C3%A9+par+email+avant+chaque+soir%C3%A9e.+Page+de+l%27%C3%A9v%C3%A9nement+%3A+https%3A%2F%2Fwww.daronsdubiz.com%2Fchallenge-intelligence-financiere&in_loc=En+ligne" target="_blank" rel="noopener">Yahoo Agenda</a>
+      <a class="btn btn--ligne " href="https://neibaftolb.github.io/challenge-if-agenda/challenge-intelligence-financiere.ics" download>Autre agenda (.ics)</a>
+    </div>
+  </section>
+
+ </div>
+</main>
+
+<section class="sec sec--cream" id="programme" aria-labelledby="h-prog">
+  <div class="wrap">
+    <p class="caps" style="text-align:center;margin-bottom:8px">Ce qui vous attend</p>
+    <h2 id="h-prog">5 soirées pour faire fructifier votre argent, <span class="hl">même en partant de zéro</span></h2>
+    <p class="lead">Chaque soir, environ 1 heure, en direct, avec Alexandre Roth, Fabien Blot et leurs coachs spécialisés.</p>
+    <div class="prog">
+      <article class="day"><svg class="ico" aria-hidden="true" focusable="false" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M38.7502 19.3751C38.7485 17.7194 38.2781 16.098 37.3932 14.6985C36.5084 13.299 35.2453 12.1788 33.7502 11.4673V11.2501C33.7488 9.63953 33.2289 8.07218 32.2675 6.77999C31.3061 5.4878 29.9543 4.53941 28.412 4.07516C26.8698 3.61092 25.2191 3.65547 23.7041 4.20222C22.1892 4.74898 20.8905 5.7689 20.0002 7.11106C19.1099 5.7689 17.8112 4.74898 16.2963 4.20222C14.7813 3.65547 13.1306 3.61092 11.5883 4.07516C10.0461 4.53941 8.69429 5.4878 7.7329 6.77999C6.77151 8.07218 6.25164 9.63953 6.2502 11.2501V11.4673C4.75385 12.1768 3.48956 13.2964 2.60427 14.6959C1.71898 16.0955 1.24902 17.7175 1.24902 19.3736C1.24902 21.0296 1.71898 22.6516 2.60427 24.0512C3.48956 25.4507 4.75385 26.5703 6.2502 27.2798V27.5001C6.25164 29.1107 6.77151 30.6781 7.7329 31.9703C8.69429 33.2624 10.0461 34.2108 11.5883 34.6751C13.1306 35.1393 14.7813 35.0948 16.2963 34.548C17.8112 34.0013 19.1099 32.9813 20.0002 31.6392C20.8905 32.9813 22.1892 34.0013 23.7041 34.548C25.2191 35.0948 26.8698 35.1393 28.412 34.6751C29.9543 34.2108 31.3061 33.2624 32.2675 31.9703C33.2289 30.6781 33.7488 29.1107 33.7502 27.5001V27.2798C35.245 26.5689 36.508 25.4492 37.3929 24.0502C38.2777 22.6513 38.7483 21.0304 38.7502 19.3751ZM13.7502 32.5001C12.5173 32.4999 11.3279 32.0443 10.4105 31.2206C9.49315 30.3969 8.91242 29.2634 8.77988 28.0376C9.18411 28.0953 9.59188 28.1245 10.0002 28.1251H11.2502C11.5817 28.1251 11.8997 27.9934 12.1341 27.759C12.3685 27.5246 12.5002 27.2066 12.5002 26.8751C12.5002 26.5436 12.3685 26.2257 12.1341 25.9912C11.8997 25.7568 11.5817 25.6251 11.2502 25.6251H10.0002C8.52451 25.6268 7.09581 25.1064 5.96704 24.1558C4.83827 23.2053 4.08224 21.886 3.83282 20.4315C3.58339 18.9771 3.85665 17.4813 4.60422 16.2089C5.35179 14.9366 6.52544 13.9699 7.91738 13.4798C8.16093 13.3936 8.37178 13.234 8.52092 13.023C8.67005 12.8121 8.75015 12.5601 8.7502 12.3017V11.2501C8.7502 9.92404 9.27698 8.65227 10.2147 7.71459C11.1523 6.77691 12.4241 6.25012 13.7502 6.25012C15.0763 6.25012 16.348 6.77691 17.2857 7.71459C18.2234 8.65227 18.7502 9.92404 18.7502 11.2501V21.9157C17.3776 20.6812 15.5963 19.9988 13.7502 20.0001C13.4187 20.0001 13.1007 20.1318 12.8663 20.3662C12.6319 20.6007 12.5002 20.9186 12.5002 21.2501C12.5002 21.5816 12.6319 21.8996 12.8663 22.134C13.1007 22.3684 13.4187 22.5001 13.7502 22.5001C15.0763 22.5001 16.348 23.0269 17.2857 23.9646C18.2234 24.9023 18.7502 26.174 18.7502 27.5001C18.7502 28.8262 18.2234 30.098 17.2857 31.0357C16.348 31.9733 15.0763 32.5001 13.7502 32.5001ZM30.0002 25.6251H28.7502C28.4187 25.6251 28.1007 25.7568 27.8663 25.9912C27.6319 26.2257 27.5002 26.5436 27.5002 26.8751C27.5002 27.2066 27.6319 27.5246 27.8663 27.759C28.1007 27.9934 28.4187 28.1251 28.7502 28.1251H30.0002C30.4085 28.1245 30.8163 28.0953 31.2205 28.0376C31.1167 28.998 30.7368 29.9078 30.1269 30.6569C29.517 31.4061 28.7032 31.9625 27.7837 32.2589C26.8643 32.5553 25.8787 32.5791 24.9461 32.3273C24.0135 32.0754 23.1738 31.5589 22.5285 30.84C21.8833 30.1211 21.4601 29.2306 21.3101 28.2763C21.1601 27.322 21.2898 26.3447 21.6835 25.4625C22.0772 24.5804 22.718 23.8311 23.5284 23.3054C24.3388 22.7797 25.2842 22.5 26.2502 22.5001C26.5817 22.5001 26.8997 22.3684 27.1341 22.134C27.3685 21.8996 27.5002 21.5816 27.5002 21.2501C27.5002 20.9186 27.3685 20.6007 27.1341 20.3662C26.8997 20.1318 26.5817 20.0001 26.2502 20.0001C24.4041 19.9988 22.6228 20.6812 21.2502 21.9157V11.2501C21.2502 9.92404 21.777 8.65227 22.7147 7.71459C23.6523 6.77691 24.9241 6.25012 26.2502 6.25012C27.5763 6.25012 28.8481 6.77691 29.7857 7.71459C30.7234 8.65227 31.2502 9.92404 31.2502 11.2501V12.3017C31.2502 12.5601 31.3303 12.8121 31.4795 13.023C31.6286 13.234 31.8395 13.3936 32.083 13.4798C33.475 13.9699 34.6486 14.9366 35.3962 16.2089C36.1437 17.4813 36.417 18.9771 36.1676 20.4315C35.9182 21.886 35.1621 23.2053 34.0334 24.1558C32.9046 25.1064 31.4759 25.6268 30.0002 25.6251ZM32.5002 17.5001C32.5002 17.8316 32.3685 18.1496 32.1341 18.384C31.8997 18.6184 31.5817 18.7501 31.2502 18.7501H30.6252C29.1334 18.7501 27.7026 18.1575 26.6477 17.1026C25.5928 16.0477 25.0002 14.617 25.0002 13.1251V12.5001C25.0002 12.1686 25.1319 11.8507 25.3663 11.6162C25.6007 11.3818 25.9187 11.2501 26.2502 11.2501C26.5817 11.2501 26.8997 11.3818 27.1341 11.6162C27.3685 11.8507 27.5002 12.1686 27.5002 12.5001V13.1251C27.5002 13.9539 27.8294 14.7488 28.4155 15.3348C29.0015 15.9209 29.7964 16.2501 30.6252 16.2501H31.2502C31.5817 16.2501 31.8997 16.3818 32.1341 16.6162C32.3685 16.8507 32.5002 17.1686 32.5002 17.5001ZM9.3752 18.7501H8.7502C8.41868 18.7501 8.10073 18.6184 7.86631 18.384C7.63189 18.1496 7.5002 17.8316 7.5002 17.5001C7.5002 17.1686 7.63189 16.8507 7.86631 16.6162C8.10073 16.3818 8.41868 16.2501 8.7502 16.2501H9.3752C10.204 16.2501 10.9989 15.9209 11.5849 15.3348C12.171 14.7488 12.5002 13.9539 12.5002 13.1251V12.5001C12.5002 12.1686 12.6319 11.8507 12.8663 11.6162C13.1007 11.3818 13.4187 11.2501 13.7502 11.2501C14.0817 11.2501 14.3997 11.3818 14.6341 11.6162C14.8685 11.8507 15.0002 12.1686 15.0002 12.5001V13.1251C15.0002 14.617 14.4076 16.0477 13.3527 17.1026C12.2978 18.1575 10.867 18.7501 9.3752 18.7501Z" fill="currentColor"/>
+</svg><p class="caps">Dimanche 4 octobre</p><h3>L'intelligence financière</h3><p>Comment fonctionne vraiment votre argent, ce que personne ne vous a appris et les erreurs qui coûtent le plus cher.</p></article><article class="day"><svg class="ico" aria-hidden="true" focusable="false" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M37.5 32.5H36.25V11.25C36.25 10.9185 36.1183 10.6005 35.8839 10.3661C35.6495 10.1317 35.3315 10 35 10H28.75V6.25C28.75 5.91848 28.6183 5.60054 28.3839 5.36612C28.1495 5.1317 27.8315 5 27.5 5H12.5C12.1685 5 11.8505 5.1317 11.6161 5.36612C11.3817 5.60054 11.25 5.91848 11.25 6.25V15H5C4.66848 15 4.35054 15.1317 4.11612 15.3661C3.8817 15.6005 3.75 15.9185 3.75 16.25V32.5H2.5C2.16848 32.5 1.85054 32.6317 1.61612 32.8661C1.3817 33.1005 1.25 33.4185 1.25 33.75C1.25 34.0815 1.3817 34.3995 1.61612 34.6339C1.85054 34.8683 2.16848 35 2.5 35H37.5C37.8315 35 38.1495 34.8683 38.3839 34.6339C38.6183 34.3995 38.75 34.0815 38.75 33.75C38.75 33.4185 38.6183 33.1005 38.3839 32.8661C38.1495 32.6317 37.8315 32.5 37.5 32.5ZM6.25 17.5H12.5C12.8315 17.5 13.1495 17.3683 13.3839 17.1339C13.6183 16.8995 13.75 16.5815 13.75 16.25V7.5H26.25V11.25C26.25 11.5815 26.3817 11.8995 26.6161 12.1339C26.8505 12.3683 27.1685 12.5 27.5 12.5H33.75V32.5H23.75V26.25C23.75 25.9185 23.6183 25.6005 23.3839 25.3661C23.1495 25.1317 22.8315 25 22.5 25H17.5C17.1685 25 16.8505 25.1317 16.6161 25.3661C16.3817 25.6005 16.25 25.9185 16.25 26.25V32.5H6.25V17.5ZM21.25 32.5H18.75V27.5H21.25V32.5ZM17.5 11.25C17.5 10.9185 17.6317 10.6005 17.8661 10.3661C18.1005 10.1317 18.4185 10 18.75 10H21.25C21.5815 10 21.8995 10.1317 22.1339 10.3661C22.3683 10.6005 22.5 10.9185 22.5 11.25C22.5 11.5815 22.3683 11.8995 22.1339 12.1339C21.8995 12.3683 21.5815 12.5 21.25 12.5H18.75C18.4185 12.5 18.1005 12.3683 17.8661 12.1339C17.6317 11.8995 17.5 11.5815 17.5 11.25ZM17.5 16.25C17.5 15.9185 17.6317 15.6005 17.8661 15.3661C18.1005 15.1317 18.4185 15 18.75 15H21.25C21.5815 15 21.8995 15.1317 22.1339 15.3661C22.3683 15.6005 22.5 15.9185 22.5 16.25C22.5 16.5815 22.3683 16.8995 22.1339 17.1339C21.8995 17.3683 21.5815 17.5 21.25 17.5H18.75C18.4185 17.5 18.1005 17.3683 17.8661 17.1339C17.6317 16.8995 17.5 16.5815 17.5 16.25ZM26.25 16.25C26.25 15.9185 26.3817 15.6005 26.6161 15.3661C26.8505 15.1317 27.1685 15 27.5 15H30C30.3315 15 30.6495 15.1317 30.8839 15.3661C31.1183 15.6005 31.25 15.9185 31.25 16.25C31.25 16.5815 31.1183 16.8995 30.8839 17.1339C30.6495 17.3683 30.3315 17.5 30 17.5H27.5C27.1685 17.5 26.8505 17.3683 26.6161 17.1339C26.3817 16.8995 26.25 16.5815 26.25 16.25ZM13.75 21.25C13.75 21.5815 13.6183 21.8995 13.3839 22.1339C13.1495 22.3683 12.8315 22.5 12.5 22.5H10C9.66848 22.5 9.35054 22.3683 9.11612 22.1339C8.8817 21.8995 8.75 21.5815 8.75 21.25C8.75 20.9185 8.8817 20.6005 9.11612 20.3661C9.35054 20.1317 9.66848 20 10 20H12.5C12.8315 20 13.1495 20.1317 13.3839 20.3661C13.6183 20.6005 13.75 20.9185 13.75 21.25ZM13.75 26.25C13.75 26.5815 13.6183 26.8995 13.3839 27.1339C13.1495 27.3683 12.8315 27.5 12.5 27.5H10C9.66848 27.5 9.35054 27.3683 9.11612 27.1339C8.8817 26.8995 8.75 26.5815 8.75 26.25C8.75 25.9185 8.8817 25.6005 9.11612 25.3661C9.35054 25.1317 9.66848 25 10 25H12.5C12.8315 25 13.1495 25.1317 13.3839 25.3661C13.6183 25.6005 13.75 25.9185 13.75 26.25ZM17.5 21.25C17.5 20.9185 17.6317 20.6005 17.8661 20.3661C18.1005 20.1317 18.4185 20 18.75 20H21.25C21.5815 20 21.8995 20.1317 22.1339 20.3661C22.3683 20.6005 22.5 20.9185 22.5 21.25C22.5 21.5815 22.3683 21.8995 22.1339 22.1339C21.8995 22.3683 21.5815 22.5 21.25 22.5H18.75C18.4185 22.5 18.1005 22.3683 17.8661 22.1339C17.6317 21.8995 17.5 21.5815 17.5 21.25ZM26.25 21.25C26.25 20.9185 26.3817 20.6005 26.6161 20.3661C26.8505 20.1317 27.1685 20 27.5 20H30C30.3315 20 30.6495 20.1317 30.8839 20.3661C31.1183 20.6005 31.25 20.9185 31.25 21.25C31.25 21.5815 31.1183 21.8995 30.8839 22.1339C30.6495 22.3683 30.3315 22.5 30 22.5H27.5C27.1685 22.5 26.8505 22.3683 26.6161 22.1339C26.3817 21.8995 26.25 21.5815 26.25 21.25ZM26.25 26.25C26.25 25.9185 26.3817 25.6005 26.6161 25.3661C26.8505 25.1317 27.1685 25 27.5 25H30C30.3315 25 30.6495 25.1317 30.8839 25.3661C31.1183 25.6005 31.25 25.9185 31.25 26.25C31.25 26.5815 31.1183 26.8995 30.8839 27.1339C30.6495 27.3683 30.3315 27.5 30 27.5H27.5C27.1685 27.5 26.8505 27.3683 26.6161 27.1339C26.3817 26.8995 26.25 26.5815 26.25 26.25Z" fill="currentColor"/>
+</svg><p class="caps">Lundi 5 octobre</p><h3>L'immobilier</h3><p>Ce qui marche encore en 2026, comment on évalue une opération et par où commencer sans se mettre en danger.</p></article><article class="day"><svg class="ico" aria-hidden="true" focusable="false" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M36.25 32.5C36.25 32.8315 36.1183 33.1495 35.8839 33.3839C35.6495 33.6183 35.3315 33.75 35 33.75H5C4.66848 33.75 4.35054 33.6183 4.11612 33.3839C3.8817 33.1495 3.75 32.8315 3.75 32.5V7.5C3.75 7.16848 3.8817 6.85054 4.11612 6.61612C4.35054 6.3817 4.66848 6.25 5 6.25C5.33152 6.25 5.64946 6.3817 5.88388 6.61612C6.1183 6.85054 6.25 7.16848 6.25 7.5V24.4828L14.1156 16.6156C14.2317 16.4994 14.3696 16.4072 14.5213 16.3443C14.6731 16.2814 14.8357 16.249 15 16.249C15.1643 16.249 15.3269 16.2814 15.4787 16.3443C15.6304 16.4072 15.7683 16.4994 15.8844 16.6156L20 20.7328L28.2328 12.5H25C24.6685 12.5 24.3505 12.3683 24.1161 12.1339C23.8817 11.8995 23.75 11.5815 23.75 11.25C23.75 10.9185 23.8817 10.6005 24.1161 10.3661C24.3505 10.1317 24.6685 10 25 10H31.25C31.5815 10 31.8995 10.1317 32.1339 10.3661C32.3683 10.6005 32.5 10.9185 32.5 11.25V17.5C32.5 17.8315 32.3683 18.1495 32.1339 18.3839C31.8995 18.6183 31.5815 18.75 31.25 18.75C30.9185 18.75 30.6005 18.6183 30.3661 18.3839C30.1317 18.1495 30 17.8315 30 17.5V14.2672L20.8844 23.3844C20.7683 23.5006 20.6304 23.5928 20.4787 23.6557C20.3269 23.7186 20.1643 23.751 20 23.751C19.8357 23.751 19.6731 23.7186 19.5213 23.6557C19.3696 23.5928 19.2317 23.5006 19.1156 23.3844L15 19.2672L6.25 28.0172V31.25H35C35.3315 31.25 35.6495 31.3817 35.8839 31.6161C36.1183 31.8505 36.25 32.1685 36.25 32.5Z" fill="currentColor"/>
+</svg><p class="caps">Mardi 6 octobre</p><h3>La Bourse et les ETF</h3><p>Investir simplement, régulièrement, sans passer ses soirées devant un écran. Les règles qui protègent votre capital.</p></article><article class="day"><svg class="ico" aria-hidden="true" focusable="false" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M34.977 7.36239C34.9399 6.7529 34.6811 6.17804 34.2493 5.74627C33.8176 5.3145 33.2427 5.05568 32.6332 5.01864C30.6676 4.90146 25.6442 5.08114 21.4754 9.24833L20.7332 9.99989H11.6192C11.2896 9.99804 10.963 10.0617 10.6582 10.1873C10.3535 10.3128 10.0768 10.4977 9.84416 10.7311L4.48479 16.0936C4.15611 16.4221 3.92548 16.8356 3.81877 17.2879C3.71206 17.7401 3.7335 18.2132 3.88068 18.6539C4.02786 19.0946 4.29496 19.4856 4.652 19.783C5.00904 20.0804 5.44189 20.2723 5.90198 20.3374L11.9129 21.1765L18.8207 28.0843L19.6598 34.0983C19.7243 34.5584 19.9162 34.9913 20.2139 35.3481C20.5116 35.7048 20.9031 35.9712 21.3442 36.1171C21.6011 36.2029 21.8702 36.2467 22.141 36.2468C22.469 36.2474 22.7939 36.1831 23.0969 36.0576C23.4 35.9321 23.6752 35.7479 23.9067 35.5155L29.2692 30.1561C29.5026 29.9235 29.6875 29.6468 29.813 29.3421C29.9386 29.0374 30.0023 28.7107 30.0004 28.3811V19.2671L30.7457 18.5218C34.9145 14.353 35.0942 9.32958 34.977 7.36239ZM11.6192 12.4999H18.2332L12.0567 18.6749L6.25041 17.8655L11.6192 12.4999ZM23.2457 11.0233C24.4469 9.8148 25.892 8.87647 27.4848 8.27102C29.0775 7.66557 30.781 7.40693 32.4817 7.51239C32.5912 9.21392 32.3353 10.9192 31.731 12.5136C31.1268 14.108 30.1883 15.5546 28.9785 16.7561L20.0004 25.7311L14.2692 19.9999L23.2457 11.0233ZM27.5004 28.3811L22.1364 33.7499L21.3254 27.9421L27.5004 21.7671V28.3811ZM15.9129 29.8655C15.2098 31.4061 12.8582 34.9999 6.25041 34.9999C5.91889 34.9999 5.60095 34.8682 5.36653 34.6338C5.13211 34.3994 5.00041 34.0814 5.00041 33.7499C5.00041 27.1421 8.59416 24.7905 10.1348 24.0858C10.2842 24.0177 10.4455 23.9797 10.6096 23.9739C10.7737 23.9681 10.9373 23.9947 11.0911 24.0522C11.2449 24.1096 11.3858 24.1968 11.5059 24.3088C11.626 24.4207 11.7229 24.5552 11.791 24.7046C11.8592 24.854 11.8972 25.0153 11.903 25.1794C11.9087 25.3434 11.8821 25.5071 11.8247 25.6609C11.7672 25.8147 11.68 25.9556 11.5681 26.0757C11.4562 26.1958 11.3217 26.2927 11.1723 26.3608C10.1676 26.8186 7.95041 28.2921 7.55979 32.4405C11.7082 32.0499 13.1848 29.8327 13.6395 28.828C13.7076 28.6786 13.8045 28.5441 13.9246 28.4322C14.0447 28.3203 14.1857 28.2331 14.3395 28.1756C14.4933 28.1182 14.6569 28.0916 14.8209 28.0973C14.985 28.1031 15.1463 28.1411 15.2957 28.2093C15.4451 28.2774 15.5796 28.3743 15.6915 28.4944C15.8035 28.6145 15.8907 28.7554 15.9481 28.9092C16.0056 29.063 16.0322 29.2267 16.0264 29.3907C16.0206 29.5548 15.9826 29.7161 15.9145 29.8655H15.9129Z" fill="currentColor"/>
+</svg><p class="caps">Mercredi 7 octobre</p><h3>Les startups</h3><p>Comment des particuliers accèdent aux jeunes entreprises, avec quels montants et quels garde-fous.</p></article><article class="day"><svg class="ico" aria-hidden="true" focusable="false" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20 3.75C16.7861 3.75 13.6443 4.70305 10.972 6.48862C8.29969 8.27419 6.21689 10.8121 4.98696 13.7814C3.75704 16.7507 3.43524 20.018 4.06225 23.1702C4.68926 26.3224 6.23692 29.2179 8.50952 31.4905C10.7821 33.7631 13.6776 35.3107 16.8298 35.9378C19.982 36.5648 23.2493 36.243 26.2186 35.013C29.1879 33.7831 31.7258 31.7003 33.5114 29.028C35.297 26.3557 36.25 23.2139 36.25 20C36.2455 15.6916 34.5319 11.561 31.4855 8.51454C28.439 5.46806 24.3084 3.75455 20 3.75ZM20 33.75C17.2805 33.75 14.6221 32.9436 12.3609 31.4327C10.0997 29.9218 8.33737 27.7744 7.29666 25.2619C6.25596 22.7494 5.98366 19.9847 6.51421 17.3175C7.04476 14.6503 8.35432 12.2003 10.2773 10.2773C12.2003 8.35431 14.6503 7.04475 17.3175 6.5142C19.9848 5.98366 22.7494 6.25595 25.2619 7.29666C27.7744 8.33736 29.9218 10.0997 31.4327 12.3609C32.9436 14.6221 33.75 17.2805 33.75 20C33.7459 23.6455 32.2959 27.1404 29.7182 29.7182C27.1404 32.2959 23.6455 33.7459 20 33.75ZM26.9406 11.3812L16.9406 16.3812C16.6989 16.5027 16.5027 16.6989 16.3813 16.9406L11.3813 26.9406C11.2859 27.1313 11.2408 27.3431 11.2504 27.5561C11.2599 27.7691 11.3238 27.9761 11.4359 28.1574C11.548 28.3387 11.7047 28.4883 11.8909 28.5921C12.0771 28.6958 12.2868 28.7502 12.5 28.75C12.6941 28.7497 12.8855 28.7048 13.0594 28.6188L23.0594 23.6188C23.3011 23.4973 23.4973 23.3011 23.6188 23.0594L28.6188 13.0594C28.7367 12.8246 28.7777 12.5586 28.7359 12.2992C28.694 12.0398 28.5715 11.8001 28.3857 11.6143C28.1999 11.4285 27.9603 11.306 27.7008 11.2642C27.4414 11.2223 27.1754 11.2633 26.9406 11.3812ZM21.5625 21.5625L15.2953 24.7047L18.4375 18.4375L24.7109 15.3016L21.5625 21.5625Z" fill="currentColor"/>
+</svg><p class="caps">Jeudi 8 octobre</p><h3>Votre plan d'action</h3><p>Vous repartez avec votre plan à 90 jours, adapté à votre situation, votre budget et votre horizon.</p></article>
+    </div>
+    <div class="proof" style="margin-top:30px">
+      <img src="https://d1yei2z3i6k35z.cloudfront.net/8919865/697057e1b26d3_image-avis-verifies.jpg" alt="Excellent, 4,9 sur 5 sur Avis Vérifiés" loading="lazy">
+      <p><strong>4,9/5</strong> sur Avis Vérifiés · <strong>plus de 50 000 personnes</strong> ont suivi ce challenge par le passé</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="qui" aria-labelledby="h-qui">
+  <div class="wrap qui">
+    <img src="https://d1yei2z3i6k35z.cloudfront.net/8919865/697207505b564_69416a7ac5217_YouTubeBanner.webp" alt="Alexandre Roth et Fabien Blot, Darons du Biz" loading="lazy">
+    <div>
+      <p class="caps" style="margin-bottom:8px">Vos hôtes</p>
+      <h2 style="text-align:left;margin-bottom:12px">Alexandre Roth et Fabien Blot</h2>
+      <p>Deux pères de famille, entrepreneurs sur Internet depuis près de vingt ans, installés à l'île Maurice avec leurs familles. Ils animent le podcast <strong>Darons du Biz</strong> et accompagnent des milliers de personnes sur trois sujets qu'on traite rarement ensemble : le business, l'argent et le choix de l'endroit où l'on vit.</p>
+      <p>Pendant ces 5 soirées, ils partagent ce qu'ils appliquent eux-mêmes, avec des coachs spécialisés en bourse, immobilier et startups. Sans jargon, sans promesse de gains, avec des chiffres, des dates et des exemples.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec--cream" id="faq" aria-labelledby="h-faq">
+  <div class="wrap wrap--n faq">
+    <h2 id="h-faq">Vos questions, nos réponses</h2>
+    <p class="lead">Tout ce qu'on nous demande le plus souvent après l'inscription.</p>
+    <details><summary>Est-ce vraiment gratuit ?</summary><p>Oui. Les 5 soirées sont gratuites et en ligne. Aucun produit n'est proposé pendant le challenge.</p></details><details><summary>Comment je reçois le lien pour assister aux soirées ?</summary><p>Par email, avant chaque soirée. C'est pour cela qu'il faut ajouter contact@daronsdubiz.com à vos expéditeurs autorisés et vérifier vos spams dès maintenant.</p></details><details><summary>Y aura-t-il un replay ?</summary><p>Non. Les soirées se vivent en direct, c'est ce qui fait leur valeur. Bloquez le créneau dans votre agenda avec les boutons ci-dessus.</p></details><details><summary>Je débute complètement, est-ce pour moi ?</summary><p>Oui. Le challenge est fait pour tous les niveaux. Le quiz nous permet justement d'adapter la vidéo que vous recevrez à votre point de départ.</p></details><details><summary>À quoi sert le quiz ?</summary><p>À connaître votre profil investisseur : votre situation, votre horizon et vos objectifs. Vous recevez ensuite une vidéo personnalisée avec les meilleures actions à mettre en place pour vous.</p></details><details><summary>Combien de temps dure chaque soirée ?</summary><p>Environ 1 heure, à 18 h heure de Paris, du dimanche 4 au jeudi 8 octobre 2026.</p></details>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <h2>À vous de jouer. <em>On se retrouve le 4 octobre à 18 h.</em></h2>
+    <p>Si vous n'avez fait qu'une chose sur cette page, faites le quiz : c'est ce qui rend les 5 soirées utiles pour vous.</p>
+    <a class="btn btn--sable" href="#quiz">Répondre au quiz maintenant</a>
+    <p style="margin:26px auto 0;font-size:15px">Let's go pour le Challenge Intelligence Financière. À très vite,<br><strong>Alexandre &amp; Fabien</strong>, co-fondateurs de Darons du Biz</p>
+  </div>
+</section>
+
+<footer class="legal">
+  <div class="wrap">
+    <p>Ce service est proposé par la société Darons Corp, en partenariat avec la société Join Venture (Leads.fr), immatriculée à l'ORIAS sous le n° 20005729 en qualité d'intermédiaire en opérations de banque et en service de paiement (IOBSP) dans la catégorie mandataire d'intermédiaire.</p>
+    <p><strong>Disclaimer.</strong> Les informations partagées dans le cadre du Challenge Intelligence Financière ont un objectif éducatif et informatif. Elles ne constituent en aucun cas un conseil en investissement, en fiscalité, en gestion de patrimoine ou en placement financier. Les intervenants et organisateurs partagent leurs expériences, connaissances et points de vue personnels, sans garantir de résultats financiers ou de performances futures. Tout investissement comporte des risques de perte partielle ou totale du capital investi. Vous êtes seul responsable de vos décisions financières.</p>
+    <p>En vous inscrivant, vous acceptez de recevoir les communications liées à l'événement ainsi que des contenus pédagogiques sur l'intelligence financière, l'investissement et la gestion du patrimoine. Conformément au RGPD, vous pouvez à tout moment vous désinscrire via le lien présent en bas de chaque email.</p>
+    <p class="links">© 2026 Darons du Biz · <a href="https://www.daronsdubiz.com/politique-de-confidentialite">Politique de confidentialité</a><a href="https://www.daronsdubiz.com/mentions-legales">Mentions légales</a><a href="https://www.daronsdubiz.com/cgv">Conditions Générales de Vente</a></p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  /* Étapes cochées (mémoire locale du visiteur) + compteur dans la barre */
+  var K="merci-if-etapes",st={};try{st=JSON.parse(localStorage.getItem(K)||"{}")}catch(e){}
+  function save(){try{localStorage.setItem(K,JSON.stringify(st))}catch(e){}}
+  function paint(){var n=0;document.querySelectorAll("#check li").forEach(function(li){var k=li.getAttribute("data-k");if(st[k]){n++;li.classList.add("done");li.querySelector(".dot").innerHTML='<svg class="ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg>'}});var p=document.getElementById("prog");if(p)p.innerHTML="<b>"+n+"</b>/3 étapes faites"}
+  document.querySelectorAll("[data-done]").forEach(function(a){a.addEventListener("click",function(){st[a.getAttribute("data-done")]=1;save();paint()})});
+  document.querySelectorAll("[data-done-group] a").forEach(function(a){a.addEventListener("click",function(){st[a.closest("[data-done-group]").getAttribute("data-done-group")]=1;save();paint()})});
+  window.addEventListener("message",function(e){try{var d=typeof e.data==="string"?JSON.parse(e.data):e.data;if(d&&/complete|finished|submitted/i.test(JSON.stringify(d))){st.quiz=1;save();paint()}}catch(x){}});
+  paint();
+  /* Compte à rebours jusqu'au dimanche 4 octobre 2026, 18 h heure de Paris (UTC+2) */
+  var T=new Date("2026-10-04T18:00:00+02:00").getTime(),c=document.getElementById("count");
+  function tick(){var d=T-Date.now();if(d<0){c.innerHTML='<div style="min-width:0;padding:10px 18px"><b style="font-size:20px">C\'est parti !</b><span>le direct a commencé</span></div>';return}var s=Math.floor(d/1000),j=Math.floor(s/86400),h=Math.floor(s%86400/3600),m=Math.floor(s%3600/60),x=s%60;var b=c.querySelectorAll("b");b[0].textContent=j;b[1].textContent=h;b[2].textContent=m;b[3].textContent=x}
+  tick();setInterval(tick,1000);
+  /* Onglet actif dans la barre */
+  var links=[].slice.call(document.querySelectorAll(".nav .links a")),secs=links.map(function(a){return document.querySelector(a.getAttribute("href"))});
+  function spy(){var y=window.scrollY+120,i=0;secs.forEach(function(s,k){if(s&&s.offsetTop<=y)i=k});links.forEach(function(a,k){a.classList.toggle("on",k===i)})}
+  window.addEventListener("scroll",spy,{passive:true});spy();
+})();
+</script>
+</div><!-- /#merci-if -->
