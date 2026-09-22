@@ -1,0 +1,269 @@
+<!-- ════════════════════════════════════════════════════════════════
+     CHALLENGE INTELLIGENCE FINANCIÈRE · OCTOBRE 2026 · VERSION SIMPLE · BLOC A (LE HAUT) · variante EN LIGNE (page Systeme.io 44369182)
+     Modèle : daronsdubiz.com/challenge-intelligence-financiere (page courte),
+     avec le branding Darons du Biz (bleu nuit + sable, polices Fliper + Manrope).
+     À coller dans un élément « HTML brut » Systeme.io, EN PREMIER sur la page.
+     Juste APRÈS ce bloc : le FORMULAIRE Systeme.io (Prénom + Email),
+     puis le BLOC B (simple/etape-1-bloc-B-bas.html).
+     Polices hébergées sur immersion.daronsdubiz.com ; images Avis Vérifiés et bannière
+     fondateurs = fichiers déjà présents dans le compte Systeme.io DDB (ne rien uploader).
+════════════════════════════════════════════════════════════════ -->
+<style>
+@font-face{font-family:'Fliper';src:url("https://immersion.daronsdubiz.com/vsl/fonts/Fliper-Bold.otf") format('opentype');font-weight:700;font-display:swap;}
+@font-face{font-family:'Fliper';src:url("https://immersion.daronsdubiz.com/vsl/fonts/Fliper-ExtraBold.otf") format('opentype');font-weight:800;font-display:swap;}
+@font-face{font-family:'Manrope';src:url("https://immersion.daronsdubiz.com/vsl/fonts/Manrope.ttf") format('truetype');font-weight:300 800;font-display:swap;}
+
+:root{
+  --navy:#0E3257; --navy-2:#1A4A78; --navy-deep:#081B30;
+  --sandy:#FFD7AA; --sandy-hover:#FFC889; --sandy-tint:#FFF3E7; --sandy-deep:#9A5A28;
+  --cream:#FFF8F1; --paper:#FFFFFF; --text-body:#2A4A66; --muted:#5C6F82; --line:rgba(14,50,87,.10);
+}
+html{scroll-behavior:smooth;}
+body{margin:0;font-family:'Manrope',-apple-system,Segoe UI,Roboto,sans-serif;color:var(--navy);background:var(--paper);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+.dbcif{font-family:'Manrope',-apple-system,Segoe UI,Roboto,sans-serif;color:var(--navy);font-size:16px;line-height:1.6;}
+.dbcif,.dbcif *,.dbcif *::before,.dbcif *::after{box-sizing:border-box;}
+.dbcif h1,.dbcif h2{font-family:'Fliper','Manrope',sans-serif;font-weight:800;line-height:1.1;margin:0;letter-spacing:-.015em;}
+.dbcif p{margin:0;}
+.dbcif img{max-width:100%;display:block;}
+.dbcif a{color:inherit;}
+
+/* Bandeau du haut */
+.dbcif .topline{background:var(--sandy);color:var(--navy);text-align:center;font-size:13px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;padding:11px 16px;}
+
+/* Hero centré, fond crème */
+.dbcif .hero{position:relative;overflow:hidden;background:transparent;padding:40px 24px 8px;text-align:center;}
+.dbcif .hero::before{content:"";position:absolute;inset:0;background:url("https://immersion.daronsdubiz.com/vsl/assets/pattern.svg");background-size:560px;opacity:.06;pointer-events:none;}
+.dbcif .hero .in{position:relative;max-width:860px;margin:0 auto;}
+.dbcif .avis{width:280px;height:auto;margin:0 auto 26px;}
+.dbcif h1{font-size:clamp(32px,5.4vw,58px);}
+.dbcif h1 .u{text-decoration:underline;text-decoration-color:var(--sandy);text-decoration-thickness:6px;text-underline-offset:6px;}
+.dbcif h1 .hl{color:var(--sandy-deep);}
+.dbcif .sub{font-size:clamp(16px,2vw,19px);color:var(--text-body);max-width:680px;margin:20px auto 0;line-height:1.55;}
+.dbcif .chips{margin:26px auto 0;font-size:13px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--navy);display:flex;flex-wrap:wrap;justify-content:center;gap:8px 0;}
+.dbcif .chips span{padding:0 14px;border-left:2px solid var(--sandy-deep);}
+.dbcif .chips span:first-child{border-left:0;}
+
+/* Gros bouton (comme le modèle), aux couleurs DDB */
+.dbcif .cta{display:inline-flex;flex-direction:column;align-items:center;gap:4px;background:var(--navy);color:#fff;text-decoration:none;padding:22px 44px 20px;border-radius:999px;box-shadow:0 18px 40px rgba(14,50,87,.28);margin-top:34px;transition:transform .15s ease,background .15s ease;}
+.dbcif .cta:hover{background:var(--navy-2);transform:translateY(-2px);}
+.dbcif .cta .big{font-family:'Fliper',sans-serif;font-weight:800;font-size:clamp(22px,3vw,30px);letter-spacing:.02em;text-transform:uppercase;display:inline-flex;align-items:center;gap:12px;color:var(--sandy);}
+.dbcif .cta .big svg{width:28px;height:28px;flex:0 0 auto;}
+.dbcif .cta .small{font-size:15px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:rgba(255,255,255,.88);}
+.dbcif .proof{margin:22px auto 0;font-size:14.5px;color:var(--muted);}
+.dbcif .proof b{color:var(--navy);}
+
+/* Amorce du formulaire (le formulaire Systeme.io vient JUSTE APRÈS ce bloc) */
+.dbcif .form-strip{background:#FFFDFB;text-align:center;padding:36px 24px 4px;scroll-margin-top:20px;}
+.dbcif .form-strip h2{font-size:clamp(24px,3.2vw,34px);max-width:640px;margin:0 auto;}
+.dbcif .form-strip p{font-size:16px;color:var(--muted);max-width:560px;margin:12px auto 0;}
+
+@media(max-width:640px){
+  .dbcif .avis{width:220px;}
+  .dbcif .chips{flex-direction:column;gap:8px;}
+  .dbcif .chips span{border-left:0;padding:0;}
+  .dbcif .cta{width:100%;padding:18px 20px 16px;border-radius:22px;}
+}
+/* ===== Réglages Systeme.io de la page en ligne (section du hero + bouton natif qui ouvre la popup) ===== */
+#section-30c82cb3,#section-49c0b0e5{background:linear-gradient(180deg,#FFF8F1 0%,#FFFDFB 100%)!important;}
+#section-30c82cb3{padding:0!important;}
+#section-49c0b0e5{padding:0 0 40px!important;}
+#section-64d48e29{padding:0!important;background:#fff!important;}
+#row-2e274a04,#row-67a15f36{padding:0!important;}
+#section-30c82cb3 .dbcif .hero{padding-bottom:0;}
+#button-bf688879{background:#0E3257!important;border-radius:999px!important;box-shadow:0 18px 40px rgba(14,50,87,.28)!important;padding:22px 44px 20px!important;transition:transform .15s ease,background .15s ease!important;}
+#button-bf688879:hover{background:#1A4A78!important;transform:translateY(-2px)!important;}
+#button-bf688879>div{font-family:'Fliper','Manrope',sans-serif!important;font-weight:800!important;font-size:clamp(22px,3vw,30px)!important;letter-spacing:.02em!important;color:#FFD7AA!important;line-height:1.15!important;}
+#button-bf688879>div i{color:#FFD7AA!important;}
+#button-bf688879 small{font-family:'Manrope',sans-serif!important;font-weight:600!important;font-size:15px!important;letter-spacing:.06em!important;color:rgba(255,255,255,.88)!important;text-transform:uppercase;}
+#button-bf688879:hover>div,#button-bf688879:hover>div i{color:#FFD7AA!important;}
+#button-bf688879:hover small{color:#fff!important;}
+@media(max-width:640px){#button-bf688879{padding:18px 20px 16px!important;border-radius:22px!important;width:100%!important;}}
+/* Bouton d'envoi dans la popup (formulaire Prénom + Email + Téléphone) */
+#button-e3aa632d{background:#0E3257!important;border-radius:14px!important;box-shadow:0 12px 30px rgba(14,50,87,.22)!important;}
+#button-e3aa632d:hover{background:#1A4A78!important;}
+#button-e3aa632d>div{font-family:'Fliper','Manrope',sans-serif!important;font-weight:800!important;color:#FFD7AA!important;letter-spacing:.02em!important;font-size:22px!important;}
+#button-e3aa632d>div i{color:#FFD7AA!important;}
+#button-e3aa632d:hover>div,#button-e3aa632d:hover>div i{color:#FFD7AA!important;}
+/* Champ caché « profil_pub » dans la popup : il reçoit la promesse vue (voir script en bas) */
+div:has(> div > input[name="profil_pub"]){display:none!important;}
+/* Champs cachés « 5DC_IF_OCT26 … » de la popup (source, pub, ensemble, campagne, UTM) : remplis par le script SUIVI DES SOURCES */
+div:has(> div > input[name^="if_oct26_"]){display:none!important;}
+</style>
+
+<div class="dbcif">
+
+<div class="topline">Challenge en ligne 100&nbsp;% gratuit</div>
+
+<div class="hero">
+  <div class="in">
+    <img class="avis" src="https://d1yei2z3i6k35z.cloudfront.net/8919865/697057e1b26d3_image-avis-verifies.jpg" alt="Excellent · Avis Vérifiés" width="1500" height="204">
+    <h1>Faites <span class="u">fructifier votre argent</span>, <span class="hl">même en partant de zéro.</span></h1>
+    <p class="sub">5 soirées en direct avec Alexandre Roth, Fabien Blot et leurs coachs spécialisés&nbsp;: bourse, immobilier, startups, et votre plan d’action.</p>
+    <div class="chips"><span>Pour tous les niveaux</span><span>100&nbsp;% gratuit et en ligne</span><span>5 soirées d'environ 1&nbsp;h</span></div>
+    <p class="proof"><b>4,9/5</b> sur Avis Vérifiés · <b>plus de 50&nbsp;000 personnes</b> ont suivi ce challenge par le passé</p>
+  </div>
+</div>
+
+<script>
+/* ═══ PROMESSES TOURNANTES (14/09/2026, v2 : inspirée de la veille concurrents Whoscale, sans année dans les titres) ═══
+   5 promesses : « actuelle » (témoin, le titre d'origine) + methode, appris, banque, simple.
+   Lien avec ?promesse=<code> : toujours la même promesse (règle Meta : même lien = même page).
+   Lien d'une pub Meta (utm_content = identifiant de la pub) : promesse fixe pour cette pub, choisie selon sa vidéo (methode, appris, banque, simple).
+   Lien sans code : tirage au hasard à parts égales, gardé pour ce visiteur (localStorage).
+   La promesse vue part dans le champ caché « profil_pub » de la popup : promesse:<code>|<lien ou hasard>|<utm_content>.
+   Rien d'autre ne change sur la page. */
+(function(){
+  var FIELD='profil_pub', KEY='ddb.if.promesse2';
+  var P={
+    actuelle:null,
+    methode:{h1:'Placer son argent, ce n’est pas une question de temps. <span class="hl">C’est une <span class="u">question de méthode</span>.</span>',
+             sub:'5 soirées en direct pour apprendre la méthode pas à pas&nbsp;: livrets, bourse, immobilier, jeunes entreprises, et votre plan d’action.'},
+    appris:{h1:'Personne ne nous a <span class="u">appris à gérer notre argent</span>. <span class="hl">En 5 soirées, on vous l’apprend.</span>',
+            sub:'Ni l’école, ni la banque. 5 soirées en direct, sans jargon, pour comprendre enfin comment placer, faire fructifier et protéger votre argent.'},
+    banque:{h1:'Votre banque sait faire <span class="u">travailler votre argent</span>. <span class="hl">Apprenez à le faire pour vous.</span>',
+            sub:'5 soirées en direct pour comprendre où va votre argent, comment fonctionnent les placements, et décider vous-même en connaissance de cause.'},
+    simple:{h1:'Faire travailler son argent, <span class="u">c’est plus simple</span> <span class="hl">que ce que vous imaginez.</span>',
+            sub:'Pas besoin d’être expert ni d’avoir beaucoup d’argent pour commencer. 5 soirées en direct pour comprendre les bases, pas à pas.'}
+  };
+  var ids=['actuelle','methode','appris','banque','simple'];
+  var qs; try{qs=new URLSearchParams(location.search);}catch(e){qs={get:function(){return null;}};}
+  var code=String(qs.get('promesse')||'').toLowerCase().trim(), source='lien';
+  var adId=String(qs.get('utm_content')||'').trim();
+  if(ids.indexOf(code)<0 && /^[0-9]{10,22}$/.test(adId)){
+    /* Pub Meta : utm_content = identifiant de la pub ({{ad.id}}). Promesse choisie selon le sujet et l'accroche de la vidéo de la pub
+       (table SUIVI/pubs-promesses.json, identifiants sans le préfixe 12025372). Pub inconnue : repli calculé (djb2 % 4). */
+    var PUBS={methode:'1434610154,1434620154,1434680154,1434700154,1434720154,1434740154,1434760154,1434770154,1434810154,1434820154,1434890154,1434930154,1434970154,1435000154,1435040154,1435050154,1570380154,1570430154,7744720154,7744760154,7744770154,7744900154,7744960154,7745050154,7745120154,7745200154,8658910154,8658950154,8658980154,8659020154,8659060154,8659110154,8659210154,8659220154,8659250154,8659290154,8659330154,9753500154,9753520154,9753540154,9930710154,9930720154,9930760154,9930780154,9930820154,9970140154,9970150154,9970170154,9970200154,9970220154,9970300154,9970310154,9970320154,9970460154,9970490154,9970530154,9970560154,9970570154,9970600154,9970610154',appris:'1434590154,1434600154,1434630154,1434790154,1434900154,1435010154,1570390154,1570420154,7744940154,7745000154,7745060154,8659070154,8659160154,8659180154,8659370154,9753550154,9753570154,9930740154,9930750154,9930770154,9930790154,9970290154,9970420154,9970440154,9970500154,9970640154',banque:'0922670154,1434560154,1434570154,1434580154,1434640154,1434690154,1434830154,1434840154,1434850154,1434860154,1434870154,1434880154,1434920154,1434940154,1434950154,1434960154,1434990154,1435030154,1570400154,1570410154,7744730154,7744740154,7744950154,7744990154,7745070154,7745090154,7745130154,7745210154,7745220154,8658990154,8659100154,8659120154,8659130154,8659140154,8659170154,8659190154,8659240154,8659280154,8659300154,8659310154,8659340154,8659400154,8659420154,9930810154,9970120154,9970210154,9970360154,9970370154,9970380154,9970390154,9970410154,9970430154,9970450154,9970470154,9970540154,9970550154,9970590154,9970620154,9970630154,9970650154,9970660154,9970670154,9970680154,9970690154',simple:'1434650154,1434660154,1434670154,1434710154,1434730154,1434750154,1434780154,1434800154,1434910154,1434980154,1435020154,7744790154,7744870154,7744920154,8658860154,8659000154,8659030154,8659040154,8659230154,8659270154,8659360154,9753510154,9753530154,9753560154,9930690154,9930700154,9930730154,9930800154,9970160154,9970230154,9970250154,9970280154,9970330154,9970510154,9970520154,9970580154'};
+    var court=adId.indexOf('12025372')===0?adId.slice(8):'';
+    for(var c in PUBS){ if(court && (','+PUBS[c]+',').indexOf(','+court+',')>=0){ code=c; } }
+    if(!code || ids.indexOf(code)<0){ var h=5381; for(var k=0;k<adId.length;k++){ h=(Math.imul(h,33)^adId.charCodeAt(k))>>>0; } code=['methode','appris','banque','simple'][h%4]; }
+    source='pub';
+  }
+  if(ids.indexOf(code)<0){
+    source='hasard'; code='';
+    try{var s=localStorage.getItem(KEY); if(ids.indexOf(s)>=0) code=s;}catch(e){}
+    if(!code){ code=ids[Math.floor(Math.random()*ids.length)]; try{localStorage.setItem(KEY,code);}catch(e){} }
+  }
+  var v=P[code];
+  if(v){
+    var h1=document.querySelector('.dbcif .hero h1'), sub=document.querySelector('.dbcif .hero .sub');
+    if(h1) h1.innerHTML=v.h1;
+    if(sub) sub.innerHTML=v.sub;
+  }
+  var utm=String(qs.get('utm_content')||'').replace(/[|]/g,' ').slice(0,60);
+  var VAL='promesse:'+code+'|'+source+(utm?'|'+utm:'');
+  window.IF_PROMESSE={code:code,source:source,valeur:VAL};
+  try{document.documentElement.setAttribute('data-if-promesse',code);}catch(e){}
+  try{(window.dataLayer=window.dataLayer||[]).push({event:'if_promesse',promesse:code,source:source});}catch(e){}
+  var setter; try{setter=Object.getOwnPropertyDescriptor(HTMLInputElement.prototype,'value').set;}catch(e){}
+  function fill(){
+    var els=document.querySelectorAll('input[name="'+FIELD+'"]');
+    for(var i=0;i<els.length;i++){
+      var el=els[i]; if(el.value===VAL) continue;
+      if(setter) setter.call(el,VAL); else el.value=VAL;
+      el.dispatchEvent(new Event('input',{bubbles:true}));
+      el.dispatchEvent(new Event('change',{bubbles:true}));
+    }
+  }
+  ['click','focusin','pointerdown','touchstart','keydown'].forEach(function(t){document.addEventListener(t,fill,true);});
+  window.addEventListener('load',fill);
+  document.addEventListener('DOMContentLoaded',fill);
+  window.IF_PROMESSE.remplir=fill;
+})();
+</script>
+
+<script>
+/* ═══ SUIVI DES SOURCES (21/09/2026, v2 : Google Ads) ═══
+   Remplit les champs cachés « 5DC_IF_OCT26 … » de la popup avec ce que dit le lien : utm_source, utm_medium,
+   utm_campaign (id campagne), utm_content (id pub), utm_term (id ensemble), placement, fbclid,
+   et, depuis le 21/09, gclid et numéro de pub Google (?pub=NN), plus le réseau d'origine ;
+   plus les noms lisibles de la campagne, de l'ensemble de pubs et de la pub (numéro de vidéo), et la date de première visite.
+   Lien sans paramètre : on reprend la dernière visite venue d'un lien suivi, gardée dans ce navigateur (localStorage).
+   Aucune donnée personnelle.
+
+   Ce qui change par rapport à la v1 (mesuré sur la page le 21/09) :
+     - le gclid n'était capturé NULLE PART alors qu'un champ existait pour le fbclid de Meta : sans lui, impossible de
+       renvoyer à Google les inscriptions et les ventes, ce que la CAPI fait déjà pour Meta ;
+     - le « ?pub=NN » des liens Google Ads était ignoré : le champ « pub » recevait l'identifiant technique du visuel
+       ({creative}), donc « Pub 825321733826 » au lieu de « Vidéo 51 » ;
+     - repli sur le cookie _gcl_aw écrit par la balise Google, mais SEULEMENT si le lien courant se présente comme un
+       lien Google : ce cookie vit 90 jours, un repli inconditionnel attribuait à Google un visiteur venu de Meta. */
+(function(){
+  var KEY='ddb.if.sources1';
+  var PARAMS=['utm_source','utm_medium','utm_campaign','utm_content','utm_term','placement','fbclid','pub','gclid','wbraid','gbraid'];
+  var CAMPAGNES={'120253720922650154':'DDB_5DC_2026_chaud (Octopus 2)','120252523218170154':'VSL Money maker été 2026',
+    '120253742910470154':'DDB_5DC_2026_froid (Octopus 2)','5DC_IF_OCT26':'DDB - 5DC 10/2026 Demand Gen (Google Ads)'};
+  var ENSEMBLES={'120253729970110154':'Audiences_Darons','120253729830920154':'Audiences_Amelie','120253729683000154':'Audiences_Emma',
+    '120253728658850154':'Audiences_Fabien','120253727744710154':'Audiences_Alex','120253720922660154':'Audiences_ALL',
+    '197275317541':'Audiences ALL - DDB Alex Amelie YouTube - 51 à 57 (Google)','198087454017':'Audiences ALL - DDB Alex Amelie YouTube (Google)'};
+  /* Identifiants de pub Meta : le préfixe change d'une campagne à l'autre. 12025372 = campagnes chaude et froide,
+     12025383 = test des vidéos de l'agence (58 à 67, lancé le 21/09), 12025384 = test « Bordeaux 14-09 » (68 à 81, lancé le 22/09).
+     La table ci-dessous donne le numéro de vidéo pour l'identifiant PRIVÉ de son préfixe (10 chiffres, aucune collision entre les trois).
+     Sources : SUIVI/pubs-promesses.json, SUIVI/pubs-agence-bordeaux-68-81.json et les campagne_*.json des ateliers. */
+  var PREFIXES=['12025372','12025383','12025384'];
+  var VIDEOS='0922670154:01,1434560154:02,1434570154:03,1434580154:04,1434590154:51,1434600154:42,1434610154:35,1434620154:32,1434630154:34,1434640154:39,1434650154:29,1434660154:31,1434670154:30,1434680154:36,1434690154:38,1434700154:37,1434710154:33,1434720154:27,1434730154:43,1434740154:45,1434750154:50,1434760154:44,1434770154:46,1434780154:41,1434790154:40,1434800154:47,1434810154:48,1434820154:49,1434830154:15,1434840154:08,1434850154:09,1434860154:06,1434870154:10,1434880154:07,1434890154:11,1434900154:12,1434910154:14,1434920154:13,1434930154:20,1434940154:18,1434950154:05,1434960154:16,1434970154:17,1434980154:26,1434990154:22,1435000154:19,1435010154:28,1435020154:21,1435030154:23,1435040154:25,1435050154:24,1570380154:52,1570390154:53,1570400154:55,1570410154:54,1570420154:56,1570430154:57,7744720154:27,7744730154:08,7744740154:09,7744760154:49,7744770154:48,7744790154:47,7744870154:33,7744900154:36,7744920154:31,7744940154:34,7744950154:39,7744960154:32,7744990154:55,7745000154:56,7745050154:25,7745060154:28,7745070154:23,7745090154:22,7745120154:17,7745130154:16,7745200154:11,7745210154:10,7745220154:07,8658860154:30,8658910154:46,8658950154:45,8658980154:37,8658990154:38,8659000154:33,8659020154:36,8659030154:31,8659040154:29,8659060154:35,8659070154:34,8659100154:04,8659110154:32,8659120154:03,8659130154:02,8659140154:01,8659160154:56,8659170154:54,8659180154:53,8659190154:55,8659210154:24,8659220154:25,8659230154:21,8659240154:23,8659250154:19,8659270154:26,8659280154:22,8659290154:57,8659300154:18,8659310154:05,8659330154:20,8659340154:13,8659360154:14,8659370154:12,8659400154:06,8659420154:15,9753500154:49,9753510154:43,9753520154:44,9753530154:47,9753540154:48,9753550154:42,9753560154:41,9753570154:40,9930690154:41,9930700154:43,9930710154:52,9930720154:46,9930730154:29,9930740154:40,9930750154:51,9930760154:44,9930770154:42,9930780154:45,9930790154:53,9930800154:50,9930810154:54,9930820154:24,9970120154:39,9970140154:49,9970150154:48,9970160154:47,9970170154:46,9970200154:27,9970210154:38,9970220154:36,9970230154:30,9970250154:31,9970280154:33,9970290154:34,9970300154:32,9970310154:37,9970320154:35,9970330154:29,9970360154:01,9970370154:04,9970380154:02,9970390154:03,9970410154:22,9970420154:56,9970430154:55,9970440154:53,9970450154:54,9970460154:25,9970470154:23,9970490154:24,9970500154:28,9970510154:21,9970520154:26,9970530154:19,9970540154:16,9970550154:05,9970560154:57,9970570154:17,9970580154:14,9970590154:18,9970600154:20,9970610154:11,9970620154:13,9970630154:07,9970640154:12,9970650154:10,9970660154:08,9970670154:15,9970680154:09,9970690154:06,4557400154:58,4345260154:59,4475810154:60,4348200154:61,4357700154:62,4477860154:63,4372240154:64,4481700154:65,4196440154:66,4560400154:67,4864760154:68,4582030154:69,4584450154:70,4510020154:71,4869020154:72,4587960154:73,4593320154:74,4597090154:75,4801070154:76,4513790154:77,4517540154:78,4804310154:79,4807900154:80,4523130154:81';
+  var qs; try{qs=new URLSearchParams(location.search);}catch(e){qs={get:function(){return null;}};}
+  var propre=function(x){return String(x==null?'':x).replace(/[ -]/g,' ').trim().slice(0,200);};
+  var lu={}, present=false;
+  PARAMS.forEach(function(k){ var x=propre(qs.get(k)); lu[k]=x; if(x) present=true; });
+  /* la balise Google écrit _gcl_aw = GCL.<horodatage>.<gclid> ; on prend tout ce qui suit le deuxième point */
+  var gclidCookie=function(){
+    try{ var m=document.cookie.match(/(?:^|;\s*)_gcl_aw=([^;]+)/); if(!m) return '';
+      var p=decodeURIComponent(m[1]).split('.'); return p.length>=3?p.slice(2).join('.'):''; }catch(e){ return ''; }
+  };
+  var lienGoogle=/^google/.test(String(lu.utm_source||'').toLowerCase())||!!(lu.pub&&/paid/.test(String(lu.utm_medium||'')));
+  if(!lu.gclid&&!lu.wbraid&&!lu.gbraid&&lienGoogle&&!lu.fbclid){ var gk=gclidCookie(); if(gk) lu.gclid=gk.slice(0,200); }
+  var memo={}; try{memo=JSON.parse(localStorage.getItem(KEY)||'{}')||{};}catch(e){memo={};}
+  var maintenant; try{maintenant=new Intl.DateTimeFormat('fr-FR',{timeZone:'Europe/Paris',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit'}).format(new Date())+' (Paris)';}catch(e){maintenant=new Date().toISOString();}
+  if(!memo.premiere) memo.premiere=maintenant;
+  var v;
+  if(present){ v=lu; memo.dernier=lu; }
+  else { v=memo.dernier||lu; }
+  try{localStorage.setItem(KEY,JSON.stringify(memo));}catch(e){}
+  var camp=v.utm_campaign||'', ens=v.utm_term||'', pub=v.utm_content||'';
+  var nomCamp=CAMPAGNES[camp]||camp;
+  var nomEns=ENSEMBLES[ens]||(ens?('Ensemble '+ens):'');
+  var numGoogle=String(v.pub||'').replace(/[^0-9]/g,'').slice(0,3);   /* ?pub=NN des liens Google Ads */
+  var pr=(window.IF_PROMESSE&&window.IF_PROMESSE.source==='pub')?' · promesse '+window.IF_PROMESSE.code:'';
+  var nomPub='';
+  if(pub){
+    var court='', num='';
+    for(var pi=0;pi<PREFIXES.length;pi++){ if(pub.indexOf(PREFIXES[pi])===0){ court=pub.slice(PREFIXES[pi].length); break; } }
+    if(court){ var i=(','+VIDEOS+',').indexOf(','+court+':'); if(i>=0){ num=(','+VIDEOS+',').slice(i+court.length+2).split(',')[0]; } }
+    if(!num&&numGoogle) num=(numGoogle.length===1?'0':'')+numGoogle;   /* pas une pub Meta connue : on prend le ?pub=NN du lien */
+    nomPub=num?('Vidéo '+num+pr):('Pub '+pub);
+  } else if(numGoogle){
+    nomPub='Vidéo '+(numGoogle.length===1?'0':'')+numGoogle+pr;        /* lien sans utm_content mais avec ?pub=NN */
+  }
+  var gclid=v.fbclid?'':(v.gclid||v.wbraid||v.gbraid||'');             /* un lien Meta ne porte jamais de gclid, même si le cookie en garde un */
+  var reseau=v.fbclid?'meta':(gclid?'google':(String(v.utm_source||'').toLowerCase()||''));
+  var VALS={
+    if_oct26_utm_source:v.utm_source||'', if_oct26_utm_medium:v.utm_medium||'', if_oct26_utm_campaign:camp,
+    if_oct26_utm_content:pub, if_oct26_utm_term:ens, if_oct26_placement:v.placement||'', if_oct26_fbclid:v.fbclid||'',
+    if_oct26_gclid:gclid, if_oct26_reseau:reseau,
+    if_oct26_campagne:nomCamp, if_oct26_ensemble:nomEns, if_oct26_pub:nomPub, if_oct26_premiere_visite:memo.premiere
+  };
+  window.IF_SOURCES=VALS;
+  var setter; try{setter=Object.getOwnPropertyDescriptor(HTMLInputElement.prototype,'value').set;}catch(e){}
+  function fill(){
+    for(var name in VALS){
+      /* 21/09 : une valeur VIDE doit être écrite, pas ignorée. Le navigateur restaure les champs d'un formulaire d'une visite à
+         l'autre : sans cela, un visiteur venu de Meta gardait le gclid d'une visite Google précédente (constaté en ligne). */
+      var val=VALS[name]||'';
+      var els=document.querySelectorAll('input[name="'+name+'"]');
+      for(var i=0;i<els.length;i++){
+        var el=els[i]; if(el.value===val) continue;
+        if(setter) setter.call(el,val); else el.value=val;
+        el.dispatchEvent(new Event('input',{bubbles:true}));
+        el.dispatchEvent(new Event('change',{bubbles:true}));
+      }
+    }
+  }
+  ['click','focusin','pointerdown','touchstart','keydown'].forEach(function(t){document.addEventListener(t,fill,true);});
+  window.addEventListener('load',fill);
+  document.addEventListener('DOMContentLoaded',fill);
+  window.IF_SOURCES_REMPLIR=fill;
+})();
+</script>
+
+</div>
+<!-- ═══ FIN DU BLOC A — juste après : le BOUTON Systeme.io (button-bf688879, ouvre la popup avec le formulaire Prénom + Email + Téléphone), puis le BLOC B ═══ -->
