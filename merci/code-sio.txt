@@ -273,14 +273,31 @@ html{scroll-behavior:smooth!important}
 </svg></div>
     <p class="lead">Quelques questions sur votre situation, votre horizon et vos objectifs. En retour, vous recevez une <strong>vidéo personnalisée</strong> avec les meilleures actions à mettre en place pour vous.</p>
     <div class="note note--secret"><span class="lock">🔒</span><div><b>Vos données sont confidentielles.</b> Vos réponses restent entre vous et nous. Elles ne sont ni partagées, ni vendues, ni publiées, et personne d'autre n'y a accès. Elles servent à une seule chose : préparer votre vidéo personnalisée.</div></div>
-    <!-- Embed Smart Funnel (custom.one), reçu le 18-09 dans le groupe « DDB X SmartFunnel ». Si le domaine change, ne remplacer que l'attribut src. -->
-    <iframe class="quiz" data-customone-embed src="https://test.custom.one/embed/y0ynax8a81" frameborder="0" loading="lazy" title="Quiz : votre profil investisseur"></iframe>
+    <!-- Embed Smart Funnel (custom.one). Adresse « embed/ddb » donnée par Fabien le 22-09 (l'ancienne « embed/y0ynax8a81 » venait du groupe « DDB X SmartFunnel », 18-09). Si le domaine change, ne remplacer que l'attribut src. -->
+    <iframe class="quiz" data-customone-embed src="https://test.custom.one/embed/ddb" frameborder="0" loading="lazy" title="Quiz : votre profil investisseur"></iframe>
     <script>
-    (function(){var p=["utm_source","utm_medium","utm_campaign","utm_content","utm_term","fbclid","gclid","ttclid","msclkid","source"],q=new URLSearchParams(window.location.search);
-    Array.prototype.forEach.call(document.querySelectorAll("iframe[data-customone-embed]"),function(f){
-      var u;try{u=new URL(f.src)}catch(e){return}var changed=false;
-      p.forEach(function(k){var v=q.get(k);if(v&&!u.searchParams.has(k)){u.searchParams.set(k,v);changed=true}});
-      if(changed)f.src=u.toString()});
+    /* Transmission au quiz (22-09-2026, demande de Fabien) :
+       1. les paramètres de suivi du lien, tels quels (liste du script fourni par Smart Funnel) ;
+       2. les coordonnées de l'inscrit : Systeme.io les met dans l'URL de cette page (first_name, email, phone_number, surname) et les laisse aussi en session ;
+          l'embed custom.one lit « name » (prénom), « email », « phone » et « customField » (lu dans son code le 22-09 : bootstrap-*.js, étape CONTACT) ;
+          quand name et email sont fournis, il saute son étape contact (les deux seuls champs affichés du quiz ddb). Le nom de famille n'a pas de paramètre
+          chez custom.one : il part dans customField (à confirmer avec Smart Funnel). Rien n'est écrit ailleurs que dans l'adresse de l'iframe. */
+    (function(){
+      var q;try{q=new URLSearchParams(window.location.search)}catch(e){q={get:function(){return null}}}
+      var S=null;try{S=window.sessionStorage}catch(e){}
+      var p=["utm_source","utm_medium","utm_campaign","utm_content","utm_term","fbclid","gclid","ttclid","msclkid","source"];
+      var lire=function(noms){for(var i=0;i<noms.length;i++){var v=q.get(noms[i]);if(v&&v.trim())return v}
+        if(S){for(var j=0;j<noms.length;j++){var w=null;try{w=S.getItem(noms[j])}catch(e){}if(w&&w.trim())return w}}return""};   /* brut, non rogné */
+      var prenom=lire(["first_name","firstname","prenom","name"]).trim().slice(0,80);
+      var email=lire(["email","e-mail"]).trim().slice(0,120);if(email.indexOf("@")<1)email="";
+      var tel=lire(["phone_number","phone","telephone","tel"]).replace(/^\s+(\d)/,"+$1").trim().slice(0,30); /* un « + » non encodé arrive en espace : rétabli AVANT le rognage */
+      var nom=lire(["surname","last_name","lastname","nom"]).trim().slice(0,80);
+      var coord={name:prenom,email:email,phone:tel,customField:nom};
+      Array.prototype.forEach.call(document.querySelectorAll("iframe[data-customone-embed]"),function(f){
+        var u;try{u=new URL(f.src)}catch(e){return}var changed=false;
+        p.forEach(function(k){var v=q.get(k);if(v&&!u.searchParams.has(k)){u.searchParams.set(k,v);changed=true}});
+        for(var k in coord){if(coord[k]&&!u.searchParams.has(k)){u.searchParams.set(k,coord[k]);changed=true}}
+        if(changed)f.src=u.toString()});
     })();
     </script>
     <p style="text-align:center;margin:16px 0 0"><a class="btn btn--ligne" href="#whatsapp" data-done="quiz">Quiz terminé, étape suivante ↓</a></p>
