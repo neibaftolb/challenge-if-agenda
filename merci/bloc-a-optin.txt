@@ -99,7 +99,7 @@ div:has(> div > input[name^="if_oct26_"]){display:none!important;}
     <img class="avis" src="https://d1yei2z3i6k35z.cloudfront.net/8919865/697057e1b26d3_image-avis-verifies.jpg" alt="Excellent · Avis Vérifiés" width="1500" height="204">
     <h1>Faites <span class="u">fructifier votre argent</span>, <span class="hl">même en partant de zéro.</span></h1>
     <p class="sub">5 soirées en direct avec Alexandre Roth, Fabien Blot et leurs coachs spécialisés&nbsp;: bourse, immobilier, startups, et votre plan d’action.</p>
-    <div class="chips"><span>Pour tous les niveaux</span><span>100&nbsp;% gratuit et en ligne</span><span>5 soirées d'environ 1&nbsp;h</span></div>
+    <div class="chips"><span>Pour tous les niveaux</span><span>100&nbsp;% gratuit et en ligne</span><span>5 soirées à 18&nbsp;h</span></div>
     <p class="proof"><b>4,9/5</b> sur Avis Vérifiés · <b>plus de 50&nbsp;000 personnes</b> ont suivi ce challenge par le passé</p>
   </div>
 </div>
@@ -172,40 +172,32 @@ div:has(> div > input[name^="if_oct26_"]){display:none!important;}
 </script>
 
 <script>
-/* ═══ SUIVI DES SOURCES (21/09/2026, v2 : Google Ads) ═══
+/* ═══ SUIVI DES SOURCES (14/09/2026, v2 du 21/09/2026 : Google Ads, gclid et ?pub=NN) ═══
    Remplit les champs cachés « 5DC_IF_OCT26 … » de la popup avec ce que dit le lien : utm_source, utm_medium,
    utm_campaign (id campagne), utm_content (id pub), utm_term (id ensemble), placement, fbclid,
-   et, depuis le 21/09, gclid et numéro de pub Google (?pub=NN), plus le réseau d'origine ;
    plus les noms lisibles de la campagne, de l'ensemble de pubs et de la pub (numéro de vidéo), et la date de première visite.
    Lien sans paramètre : on reprend la dernière visite venue d'un lien suivi, gardée dans ce navigateur (localStorage).
-   Aucune donnée personnelle.
-
-   Ce qui change par rapport à la v1 (mesuré sur la page le 21/09) :
-     - le gclid n'était capturé NULLE PART alors qu'un champ existait pour le fbclid de Meta : sans lui, impossible de
-       renvoyer à Google les inscriptions et les ventes, ce que la CAPI fait déjà pour Meta ;
-     - le « ?pub=NN » des liens Google Ads était ignoré : le champ « pub » recevait l'identifiant technique du visuel
-       ({creative}), donc « Pub 825321733826 » au lieu de « Vidéo 51 » ;
-     - repli sur le cookie _gcl_aw écrit par la balise Google, mais SEULEMENT si le lien courant se présente comme un
-       lien Google : ce cookie vit 90 jours, un repli inconditionnel attribuait à Google un visiteur venu de Meta. */
+   Aucune donnée personnelle. */
 (function(){
   var KEY='ddb.if.sources1';
   var PARAMS=['utm_source','utm_medium','utm_campaign','utm_content','utm_term','placement','fbclid','pub','gclid','wbraid','gbraid'];
   var CAMPAGNES={'120253720922650154':'DDB_5DC_2026_chaud (Octopus 2)','120252523218170154':'VSL Money maker été 2026',
-    '120253742910470154':'DDB_5DC_2026_froid (Octopus 2)','5DC_IF_OCT26':'DDB - 5DC 10/2026 Demand Gen (Google Ads)'};
+    '120253834194540154':'Test vidéos agence (58 à 67)','120253844500480154':'Test vidéos agence Bordeaux (68 à 81)'};
   var ENSEMBLES={'120253729970110154':'Audiences_Darons','120253729830920154':'Audiences_Amelie','120253729683000154':'Audiences_Emma',
     '120253728658850154':'Audiences_Fabien','120253727744710154':'Audiences_Alex','120253720922660154':'Audiences_ALL',
-    '197275317541':'Audiences ALL - DDB Alex Amelie YouTube - 51 à 57 (Google)','198087454017':'Audiences ALL - DDB Alex Amelie YouTube (Google)'};
+    '120253834195310154':'Test agence · vidéo 66','120253834331880154':'Test agence · vidéo 59','120253834333750154':'Test agence · vidéo 61','120253834334680154':'Test agence · vidéo 62','120253834337790154':'Test agence · vidéo 64','120253834469840154':'Test agence · vidéo 60','120253834470630154':'Test agence · vidéo 63','120253834472000154':'Test agence · vidéo 65','120253834552250154':'Test agence · vidéo 58','120253834554060154':'Test agence · vidéo 67','120253844501480154':'Test Bordeaux · vidéo 71','120253844502460154':'Test Bordeaux · vidéo 77','120253844504340154':'Test Bordeaux · vidéo 78','120253844506370154':'Test Bordeaux · vidéo 81','120253844569560154':'Test Bordeaux · vidéo 69','120253844571800154':'Test Bordeaux · vidéo 70','120253844574350154':'Test Bordeaux · vidéo 73','120253844576090154':'Test Bordeaux · vidéo 74','120253844578580154':'Test Bordeaux · vidéo 75','120253844793920154':'Test Bordeaux · vidéo 76','120253844795010154':'Test Bordeaux · vidéo 79','120253844796960154':'Test Bordeaux · vidéo 80','120253844855960154':'Test Bordeaux · vidéo 68','120253844859150154':'Test Bordeaux · vidéo 72'};
   /* Identifiants de pub Meta : le préfixe change d'une campagne à l'autre. 12025372 = campagnes chaude et froide,
-     12025383 = test des vidéos de l'agence (58 à 67, lancé le 21/09), 12025384 = test « Bordeaux 14-09 » (68 à 81, lancé le 22/09).
-     La table ci-dessous donne le numéro de vidéo pour l'identifiant PRIVÉ de son préfixe (10 chiffres, aucune collision entre les trois).
+     12025383 = test des vidéos de l'agence (58 a 67, lance le 21/09), 12025384 = test Bordeaux 14-09 (68 a 81, lance le 22/09).
+     La table ci-dessous donne le numero de video pour l'identifiant PRIVE de son prefixe (10 chiffres, aucune collision entre les trois).
      Sources : SUIVI/pubs-promesses.json, SUIVI/pubs-agence-bordeaux-68-81.json et les campagne_*.json des ateliers. */
   var PREFIXES=['12025372','12025383','12025384'];
   var VIDEOS='0922670154:01,1434560154:02,1434570154:03,1434580154:04,1434590154:51,1434600154:42,1434610154:35,1434620154:32,1434630154:34,1434640154:39,1434650154:29,1434660154:31,1434670154:30,1434680154:36,1434690154:38,1434700154:37,1434710154:33,1434720154:27,1434730154:43,1434740154:45,1434750154:50,1434760154:44,1434770154:46,1434780154:41,1434790154:40,1434800154:47,1434810154:48,1434820154:49,1434830154:15,1434840154:08,1434850154:09,1434860154:06,1434870154:10,1434880154:07,1434890154:11,1434900154:12,1434910154:14,1434920154:13,1434930154:20,1434940154:18,1434950154:05,1434960154:16,1434970154:17,1434980154:26,1434990154:22,1435000154:19,1435010154:28,1435020154:21,1435030154:23,1435040154:25,1435050154:24,1570380154:52,1570390154:53,1570400154:55,1570410154:54,1570420154:56,1570430154:57,7744720154:27,7744730154:08,7744740154:09,7744760154:49,7744770154:48,7744790154:47,7744870154:33,7744900154:36,7744920154:31,7744940154:34,7744950154:39,7744960154:32,7744990154:55,7745000154:56,7745050154:25,7745060154:28,7745070154:23,7745090154:22,7745120154:17,7745130154:16,7745200154:11,7745210154:10,7745220154:07,8658860154:30,8658910154:46,8658950154:45,8658980154:37,8658990154:38,8659000154:33,8659020154:36,8659030154:31,8659040154:29,8659060154:35,8659070154:34,8659100154:04,8659110154:32,8659120154:03,8659130154:02,8659140154:01,8659160154:56,8659170154:54,8659180154:53,8659190154:55,8659210154:24,8659220154:25,8659230154:21,8659240154:23,8659250154:19,8659270154:26,8659280154:22,8659290154:57,8659300154:18,8659310154:05,8659330154:20,8659340154:13,8659360154:14,8659370154:12,8659400154:06,8659420154:15,9753500154:49,9753510154:43,9753520154:44,9753530154:47,9753540154:48,9753550154:42,9753560154:41,9753570154:40,9930690154:41,9930700154:43,9930710154:52,9930720154:46,9930730154:29,9930740154:40,9930750154:51,9930760154:44,9930770154:42,9930780154:45,9930790154:53,9930800154:50,9930810154:54,9930820154:24,9970120154:39,9970140154:49,9970150154:48,9970160154:47,9970170154:46,9970200154:27,9970210154:38,9970220154:36,9970230154:30,9970250154:31,9970280154:33,9970290154:34,9970300154:32,9970310154:37,9970320154:35,9970330154:29,9970360154:01,9970370154:04,9970380154:02,9970390154:03,9970410154:22,9970420154:56,9970430154:55,9970440154:53,9970450154:54,9970460154:25,9970470154:23,9970490154:24,9970500154:28,9970510154:21,9970520154:26,9970530154:19,9970540154:16,9970550154:05,9970560154:57,9970570154:17,9970580154:14,9970590154:18,9970600154:20,9970610154:11,9970620154:13,9970630154:07,9970640154:12,9970650154:10,9970660154:08,9970670154:15,9970680154:09,9970690154:06,4557400154:58,4345260154:59,4475810154:60,4348200154:61,4357700154:62,4477860154:63,4372240154:64,4481700154:65,4196440154:66,4560400154:67,4864760154:68,4582030154:69,4584450154:70,4510020154:71,4869020154:72,4587960154:73,4593320154:74,4597090154:75,4801070154:76,4513790154:77,4517540154:78,4804310154:79,4807900154:80,4523130154:81';
   var qs; try{qs=new URLSearchParams(location.search);}catch(e){qs={get:function(){return null;}};}
-  var propre=function(x){return String(x==null?'':x).replace(/[ -]/g,' ').trim().slice(0,200);};
+  var propre=function(x){return String(x==null?'':x).replace(/[\u0000-\u001f]/g,' ').trim().slice(0,200);};
   var lu={}, present=false;
   PARAMS.forEach(function(k){ var x=propre(qs.get(k)); lu[k]=x; if(x) present=true; });
-  /* la balise Google écrit _gcl_aw = GCL.<horodatage>.<gclid> ; on prend tout ce qui suit le deuxième point */
+  /* la balise Google écrit _gcl_aw = GCL.<horodatage>.<gclid> ; on prend tout ce qui suit le deuxième point.
+     Le cookie vit 90 jours : on ne s'en sert QUE si le lien courant se présente comme un lien Google, jamais s'il porte un fbclid. */
   var gclidCookie=function(){
     try{ var m=document.cookie.match(/(?:^|;\s*)_gcl_aw=([^;]+)/); if(!m) return '';
       var p=decodeURIComponent(m[1]).split('.'); return p.length>=3?p.slice(2).join('.'):''; }catch(e){ return ''; }
@@ -246,8 +238,8 @@ div:has(> div > input[name^="if_oct26_"]){display:none!important;}
   var setter; try{setter=Object.getOwnPropertyDescriptor(HTMLInputElement.prototype,'value').set;}catch(e){}
   function fill(){
     for(var name in VALS){
-      /* 21/09 : une valeur VIDE doit être écrite, pas ignorée. Le navigateur restaure les champs d'un formulaire d'une visite à
-         l'autre : sans cela, un visiteur venu de Meta gardait le gclid d'une visite Google précédente (constaté en ligne). */
+      /* 21/09 : une valeur VIDE doit etre ecrite, pas ignoree. Le navigateur restaure les champs d'un formulaire d'une visite a
+         l'autre : sans cela, un visiteur venu de Meta gardait le gclid d'une visite Google precedente (constate en ligne). */
       var val=VALS[name]||'';
       var els=document.querySelectorAll('input[name="'+name+'"]');
       for(var i=0;i<els.length;i++){
@@ -267,3 +259,57 @@ div:has(> div > input[name^="if_oct26_"]){display:none!important;}
 
 </div>
 <!-- ═══ FIN DU BLOC A — juste après : le BOUTON Systeme.io (button-bf688879, ouvre la popup avec le formulaire Prénom + Email + Téléphone), puis le BLOC B ═══ -->
+
+<style>
+/* ═══ CORRECTIF 24/09/2026 ═══
+   Trois rangées venues de la page « Optin Complet » (étape 25429150) se sont
+   propagées ici : Systeme.io partage l'entité « section-49c0b0e5 » entre les deux
+   pages, et l'enregistrement de l'autre page a réécrit cette section.
+   Elles sont masquées ici parce que l'éditeur se fige dès qu'on essaie de les
+   supprimer. À retirer proprement quand l'éditeur le permettra.
+   row-67317a92 : titre de l'édition de mars · row-acaf4dc5 : ligne « POUR TOUS LES
+   NIVEAUX » de mars · row-4d2c9c29 : rangée vide laissée par le bloc de travail.
+   Ne PAS masquer row-ba78d902 : c'est le bouton d'inscription de cette page. */
+#row-67317a92, #row-acaf4dc5, #row-4d2c9c29 { display: none !important; }
+</style>
+
+<script>
+/* ═══ PRE-REMPLISSAGE DU QUIZ DE LA PAGE DE REMERCIEMENT (24/09/2026) ═══
+   La page de remerciement lit first_name, email et phone_number dans l'adresse
+   puis dans la session, et les passe au quiz Smart Funnel, qui saute alors son
+   etape contact : le visiteur ne ressaisit pas ce qu'il vient de donner.
+   Ici le formulaire est celui de Systeme.io : on releve les trois valeurs au
+   moment ou le visiteur valide. Elles restent dans son onglet (sessionStorage),
+   ne partent nulle part et disparaissent a la fermeture.
+   La page Momentum fait la meme chose dans sioSubmit : les deux branches du
+   test A/B doivent se comporter pareil. */
+(function(){
+  var S;try{S=window.sessionStorage}catch(e){return}
+  /* Numero au format international, comme sur la page Momentum (intl-tel-input) :
+     indicatif du pays choisi dans le selecteur + chiffres saisis, sans le 0 initial. */
+  function numero(tel){
+    var v=(tel.value||'').trim();if(!v)return'';
+    if(v.charAt(0)==='+')return v.replace(/[^\d+]/g,'');
+    var d=v.replace(/\D+/g,'');if(!d)return'';
+    var p=tel.parentElement;if(!p)return v;
+    var b=p.querySelector('button[data-country]');
+    var li=b&&p.querySelector('li[data-country="'+b.getAttribute('data-country')+'"]');
+    var m=li&&(li.textContent||'').match(/\+(\d{1,4})/);
+    return m?'+'+m[1]+d.replace(/^0+/,''):v;
+  }
+  function capter(){
+    var em='',racine=null,champs=document.querySelectorAll('input[name="email"]');
+    for(var i=0;i<champs.length;i++){var v=(champs[i].value||'').trim();
+      if(v.indexOf('@')>0){em=v;racine=champs[i].closest('form')||document}}
+    if(!em)return;
+    var pr=racine.querySelector('input[name="first_name"]');
+    var tel=racine.querySelector('input[type="tel"]');
+    try{
+      S.setItem('email',em);
+      if(pr&&pr.value.trim())S.setItem('first_name',pr.value.trim());
+      var t=tel?numero(tel):'';if(t)S.setItem('phone_number',t);
+    }catch(e){}
+  }
+  ['click','submit','change','keydown'].forEach(function(t){document.addEventListener(t,capter,true)});
+})();
+</script>
