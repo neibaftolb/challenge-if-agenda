@@ -24,14 +24,20 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:challenge-if-oct2026@daronsdubiz.com
-DTSTAMP:20260912T150743Z
+DTSTAMP:20261001T183724Z
+LAST-MODIFIED:20261001T183724Z
+SEQUENCE:1
 DTSTART;TZID=Europe/Paris:20261004T180000
-DTEND;TZID=Europe/Paris:20261004T190000
+DTEND;TZID=Europe/Paris:20261004T210000
 RRULE:FREQ=DAILY;COUNT=5
 SUMMARY:Challenge Intelligence Financière (en direct)
-DESCRIPTION:5 soirées en direct\, en ligne et 100 % gratuites\, du dimanche 4 au jeudi 8 octobre 2026\, environ 1 h chaque soir\, avec Fabien Blot et Alexandre Roth (Darons du Biz).\n\nLe lien de connexion au direct vous est envoyé par email avant chaque soirée. Page de l'événement : https://www.daronsdubiz.com/challenge-intelligence-financiere
+DESCRIPTION:5 soirées en direct\, du dimanche 4 au jeudi 8 octobre\, à 18
+  h (heure de Paris)\, avec Alexandre Roth et Fabien Blot.\n\nVotre lien de
+  connexion personnel est dans l'email « Votre inscription au challenge es
+ t confirmée ».\n\nRappels et infos dans le groupe WhatsApp : https://ddb
+ .best/whatsapp-if
 LOCATION:En ligne
-URL:https://www.daronsdubiz.com/challenge-intelligence-financiere
+URL:https://ddb.best/whatsapp-if
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
