@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Votre rendez-vous est confirmé</title>
+<!-- Page relais entre Calendly et la page « Merci Audit » des Darons du Biz (posée le 01/10/2026).
+     Calendly renvoie ici avec les détails de la réservation dans l'adresse (option « transmettre les détails de l'événement »).
+     Cette page ne garde que le prénom du conseiller attribué et les paramètres utm, puis envoie le visiteur sur la page de merci.
+     Le nom, l'email, le téléphone et les réponses du prospect ne quittent pas cette page : elle ne porte aucun outil de mesure
+     (ni pixel Meta, ni balise Google), contrairement à la page de merci. Rien n'est enregistré ici. -->
+<script>
+(function () {
+  var DEST = "https://www.daronsdubiz.com/merci-audit-oct26";
+  var GARDER = ["utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term"];
+  function prenom(nom) {
+    var s = String(nom || "").toLowerCase();
+    try { s = s.normalize("NFD").replace(/[̀-ͯ]/g, ""); } catch (e) {}
+    s = s.replace(/^\s+|\s+$/g, "").split(/[\s\-@._]+/)[0] || "";
+    return /^[a-z]{2,20}$/.test(s) ? s : "";
+  }
+  var suite = [];
+  try {
+    var p = new URLSearchParams(window.location.search);
+    var c = prenom(p.get("assigned_to"));
+    if (c) { suite.push("closer=" + c); }
+    for (var i = 0; i < GARDER.length; i++) {
+      var v = p.get(GARDER[i]);
+      if (v && v.length <= 200 && v.indexOf("@") < 0) { suite.push(GARDER[i] + "=" + encodeURIComponent(v)); }
+    }
+  } catch (e) {}
+  window.location.replace(DEST + (suite.length ? "?" + suite.join("&") : ""));
+})();
+</script>
+<noscript><meta http-equiv="refresh" content="0; url=https://www.daronsdubiz.com/merci-audit-oct26"></noscript>
+<style>body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:#22304a;text-align:center;padding:18vh 20px;font-size:18px}a{color:#22304a}</style>
+</head>
+<body>
+<p>Votre rendez-vous est confirmé.</p>
+<p><a href="https://www.daronsdubiz.com/merci-audit-oct26" rel="noreferrer">Continuer vers la page de confirmation</a></p>
+</body>
+</html>
