@@ -8,23 +8,26 @@
 <title>Votre rendez-vous est confirmé</title>
 <!-- Page relais entre Calendly et la page « Merci Audit » des Darons du Biz (posée le 01/10/2026).
      Calendly renvoie ici avec les détails de la réservation dans l'adresse (option « transmettre les détails de l'événement »).
-     Cette page ne garde que le prénom du conseiller attribué et les paramètres utm, puis envoie le visiteur sur la page de merci.
+     Cette page ne garde que le nom du conseiller attribué et les paramètres utm, puis envoie le visiteur sur la page de merci.
      Le nom, l'email, le téléphone et les réponses du prospect ne quittent pas cette page : elle ne porte aucun outil de mesure
      (ni pixel Meta, ni balise Google), contrairement à la page de merci. Rien n'est enregistré ici. -->
 <script>
 (function () {
   var DEST = "https://www.daronsdubiz.com/merci-audit-oct26";
   var GARDER = ["utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term"];
-  function prenom(nom) {
-    var s = String(nom || "").toLowerCase();
+  // Nom du conseiller tel que Calendly l'affiche : « Prénom », « Prénom - Darons du Biz », « NOM Prénom » ou une adresse.
+  // On transmet ses mots en minuscules sans accent (quatre au plus), la page de merci y retrouve le prénom.
+  function conseiller(nom) {
+    var s = String(nom || "").toLowerCase().split("@")[0];
     try { s = s.normalize("NFD").replace(/[̀-ͯ]/g, ""); } catch (e) {}
-    s = s.replace(/^\s+|\s+$/g, "").split(/[\s\-@._]+/)[0] || "";
-    return /^[a-z]{2,20}$/.test(s) ? s : "";
+    var mots = s.split(/[\s\-._]+/), garde = [];
+    for (var i = 0; i < mots.length && garde.length < 4; i++) { if (/^[a-z]{2,20}$/.test(mots[i])) { garde.push(mots[i]); } }
+    return garde.join("-");
   }
   var suite = [];
   try {
     var p = new URLSearchParams(window.location.search);
-    var c = prenom(p.get("assigned_to"));
+    var c = conseiller(p.get("assigned_to"));
     if (c) { suite.push("closer=" + c); }
     for (var i = 0; i < GARDER.length; i++) {
       var v = p.get(GARDER[i]);
