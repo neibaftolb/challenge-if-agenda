@@ -22,13 +22,128 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:challenge-if-oct2026@daronsdubiz.com
-DTSTAMP:20261001T193532Z
+DTSTAMP:20261002T060611Z
 CREATED:20260912T150743Z
-LAST-MODIFIED:20261001T193532Z
-SEQUENCE:2
+LAST-MODIFIED:20261002T060611Z
+SEQUENCE:3
 DTSTART;TZID=Europe/Paris:20261004T180000
 DTEND;TZID=Europe/Paris:20261004T210000
-RRULE:FREQ=DAILY;COUNT=5
+SUMMARY:Challenge Intelligence Financière (en direct)
+DESCRIPTION:5 soirées en direct\, du dimanche 4 au jeudi 8 octobre\, à 18
+  h (heure de Paris)\, avec Alexandre Roth et Fabien Blot.\n\nVotre lien de
+  connexion personnel est dans l'email « Votre inscription au challenge es
+ t confirmée ».\n\nRappels et infos dans le groupe WhatsApp : https://ddb
+ .best/whatsapp-if
+LOCATION:En ligne
+URL:https://ddb.best/whatsapp-if
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:Challenge Intelligence Financière dans 1 h
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Le direct commence dans 10 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:challenge-if-oct2026-j2@daronsdubiz.com
+DTSTAMP:20261002T060611Z
+CREATED:20260912T150743Z
+LAST-MODIFIED:20261002T060611Z
+SEQUENCE:3
+DTSTART;TZID=Europe/Paris:20261005T180000
+DTEND;TZID=Europe/Paris:20261005T210000
+SUMMARY:Challenge Intelligence Financière (en direct)
+DESCRIPTION:5 soirées en direct\, du dimanche 4 au jeudi 8 octobre\, à 18
+  h (heure de Paris)\, avec Alexandre Roth et Fabien Blot.\n\nVotre lien de
+  connexion personnel est dans l'email « Votre inscription au challenge es
+ t confirmée ».\n\nRappels et infos dans le groupe WhatsApp : https://ddb
+ .best/whatsapp-if
+LOCATION:En ligne
+URL:https://ddb.best/whatsapp-if
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:Challenge Intelligence Financière dans 1 h
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Le direct commence dans 10 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:challenge-if-oct2026-j3@daronsdubiz.com
+DTSTAMP:20261002T060611Z
+CREATED:20260912T150743Z
+LAST-MODIFIED:20261002T060611Z
+SEQUENCE:3
+DTSTART;TZID=Europe/Paris:20261006T180000
+DTEND;TZID=Europe/Paris:20261006T210000
+SUMMARY:Challenge Intelligence Financière (en direct)
+DESCRIPTION:5 soirées en direct\, du dimanche 4 au jeudi 8 octobre\, à 18
+  h (heure de Paris)\, avec Alexandre Roth et Fabien Blot.\n\nVotre lien de
+  connexion personnel est dans l'email « Votre inscription au challenge es
+ t confirmée ».\n\nRappels et infos dans le groupe WhatsApp : https://ddb
+ .best/whatsapp-if
+LOCATION:En ligne
+URL:https://ddb.best/whatsapp-if
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:Challenge Intelligence Financière dans 1 h
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Le direct commence dans 10 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:challenge-if-oct2026-j4@daronsdubiz.com
+DTSTAMP:20261002T060611Z
+CREATED:20260912T150743Z
+LAST-MODIFIED:20261002T060611Z
+SEQUENCE:3
+DTSTART;TZID=Europe/Paris:20261007T180000
+DTEND;TZID=Europe/Paris:20261007T210000
+SUMMARY:Challenge Intelligence Financière (en direct)
+DESCRIPTION:5 soirées en direct\, du dimanche 4 au jeudi 8 octobre\, à 18
+  h (heure de Paris)\, avec Alexandre Roth et Fabien Blot.\n\nVotre lien de
+  connexion personnel est dans l'email « Votre inscription au challenge es
+ t confirmée ».\n\nRappels et infos dans le groupe WhatsApp : https://ddb
+ .best/whatsapp-if
+LOCATION:En ligne
+URL:https://ddb.best/whatsapp-if
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:Challenge Intelligence Financière dans 1 h
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Le direct commence dans 10 min
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:challenge-if-oct2026-j5@daronsdubiz.com
+DTSTAMP:20261002T060611Z
+CREATED:20260912T150743Z
+LAST-MODIFIED:20261002T060611Z
+SEQUENCE:3
+DTSTART;TZID=Europe/Paris:20261008T180000
+DTEND;TZID=Europe/Paris:20261008T210000
 SUMMARY:Challenge Intelligence Financière (en direct)
 DESCRIPTION:5 soirées en direct\, du dimanche 4 au jeudi 8 octobre\, à 18
   h (heure de Paris)\, avec Alexandre Roth et Fabien Blot.\n\nVotre lien de
