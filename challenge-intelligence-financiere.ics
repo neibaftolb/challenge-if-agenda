@@ -22,18 +22,21 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:challenge-if-oct2026@daronsdubiz.com
-DTSTAMP:20261002T060611Z
+DTSTAMP:20261002T062114Z
 CREATED:20260912T150743Z
-LAST-MODIFIED:20261002T060611Z
-SEQUENCE:3
+LAST-MODIFIED:20261002T062114Z
+SEQUENCE:4
 DTSTART;TZID=Europe/Paris:20261004T180000
 DTEND;TZID=Europe/Paris:20261004T210000
-SUMMARY:Challenge Intelligence Financière (en direct)
-DESCRIPTION:5 soirées en direct\, du dimanche 4 au jeudi 8 octobre\, à 18
-  h (heure de Paris)\, avec Alexandre Roth et Fabien Blot.\n\nVotre lien de
-  connexion personnel est dans l'email « Votre inscription au challenge es
- t confirmée ».\n\nRappels et infos dans le groupe WhatsApp : https://ddb
- .best/whatsapp-if
+SUMMARY:Challenge Intelligence Financière · Jour 1 · 2027 : reprenez le 
+ pouvoir sur votre avenir financier
+DESCRIPTION:Faites le point sur votre argent\, repérez ce qui vous freine 
+ et découvrez les premières décisions à prendre pour mieux protéger vo
+ tre patrimoine et préparer les projets de votre famille.\n\nAvec Alexandr
+ e Roth et Fabien Blot.\n\nEn direct à 18 h (heure de Paris). Votre lien d
+ e connexion personnel est dans l'email « Votre inscription au challenge e
+ st confirmée ».\n\nRappels et infos dans le groupe WhatsApp : https://dd
+ b.best/whatsapp-if
 LOCATION:En ligne
 URL:https://ddb.best/whatsapp-if
 STATUS:CONFIRMED
@@ -51,18 +54,20 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:challenge-if-oct2026-j2@daronsdubiz.com
-DTSTAMP:20261002T060611Z
+DTSTAMP:20261002T062114Z
 CREATED:20260912T150743Z
-LAST-MODIFIED:20261002T060611Z
-SEQUENCE:3
+LAST-MODIFIED:20261002T062114Z
+SEQUENCE:4
 DTSTART;TZID=Europe/Paris:20261005T180000
 DTEND;TZID=Europe/Paris:20261005T210000
-SUMMARY:Challenge Intelligence Financière (en direct)
-DESCRIPTION:5 soirées en direct\, du dimanche 4 au jeudi 8 octobre\, à 18
-  h (heure de Paris)\, avec Alexandre Roth et Fabien Blot.\n\nVotre lien de
-  connexion personnel est dans l'email « Votre inscription au challenge es
- t confirmée ».\n\nRappels et infos dans le groupe WhatsApp : https://ddb
- .best/whatsapp-if
+SUMMARY:Challenge Intelligence Financière · Jour 2 · Immobilier : les cl
+ és pour bâtir votre patrimoine grâce au crédit
+DESCRIPTION:Apprenez à reconnaître un bon projet\, à évaluer votre capa
+ cité d’emprunt et à préparer un dossier solide\, même si vous pensez
+  que la banque vous dira non.\n\nAvec Élodie Bouchard.\n\nEn direct à 18
+  h (heure de Paris). Votre lien de connexion personnel est dans l'email «
+  Votre inscription au challenge est confirmée ».\n\nRappels et infos dan
+ s le groupe WhatsApp : https://ddb.best/whatsapp-if
 LOCATION:En ligne
 URL:https://ddb.best/whatsapp-if
 STATUS:CONFIRMED
@@ -80,18 +85,20 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:challenge-if-oct2026-j3@daronsdubiz.com
-DTSTAMP:20261002T060611Z
+DTSTAMP:20261002T062114Z
 CREATED:20260912T150743Z
-LAST-MODIFIED:20261002T060611Z
-SEQUENCE:3
+LAST-MODIFIED:20261002T062114Z
+SEQUENCE:4
 DTSTART;TZID=Europe/Paris:20261006T180000
 DTEND;TZID=Europe/Paris:20261006T210000
-SUMMARY:Challenge Intelligence Financière (en direct)
-DESCRIPTION:5 soirées en direct\, du dimanche 4 au jeudi 8 octobre\, à 18
-  h (heure de Paris)\, avec Alexandre Roth et Fabien Blot.\n\nVotre lien de
-  connexion personnel est dans l'email « Votre inscription au challenge es
- t confirmée ».\n\nRappels et infos dans le groupe WhatsApp : https://ddb
- .best/whatsapp-if
+SUMMARY:Challenge Intelligence Financière · Jour 3 · Bourse : faites tra
+ vailler votre argent\, même en partant de zéro
+DESCRIPTION:Découvrez les ETF en partant des bases et apprenez à investir
+  avec méthode\, sans avoir à suivre la bourse toute la journée.\n\nAvec
+  Fabien Vanni.\n\nEn direct à 18 h (heure de Paris). Votre lien de connex
+ ion personnel est dans l'email « Votre inscription au challenge est confi
+ rmée ».\n\nRappels et infos dans le groupe WhatsApp : https://ddb.best/w
+ hatsapp-if
 LOCATION:En ligne
 URL:https://ddb.best/whatsapp-if
 STATUS:CONFIRMED
@@ -109,18 +116,20 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:challenge-if-oct2026-j4@daronsdubiz.com
-DTSTAMP:20261002T060611Z
+DTSTAMP:20261002T062114Z
 CREATED:20260912T150743Z
-LAST-MODIFIED:20261002T060611Z
-SEQUENCE:3
+LAST-MODIFIED:20261002T062114Z
+SEQUENCE:4
 DTSTART;TZID=Europe/Paris:20261007T180000
 DTEND;TZID=Europe/Paris:20261007T210000
-SUMMARY:Challenge Intelligence Financière (en direct)
-DESCRIPTION:5 soirées en direct\, du dimanche 4 au jeudi 8 octobre\, à 18
-  h (heure de Paris)\, avec Alexandre Roth et Fabien Blot.\n\nVotre lien de
-  connexion personnel est dans l'email « Votre inscription au challenge es
- t confirmée ».\n\nRappels et infos dans le groupe WhatsApp : https://ddb
- .best/whatsapp-if
+SUMMARY:Challenge Intelligence Financière · Jour 4 · Startups : devenez 
+ actionnaire des entreprises de demain
+DESCRIPTION:Découvrez comment investir dans une entreprise et les bonnes q
+ uestions à vous poser pour diversifier votre patrimoine\, même sans exp
+ érience.\n\nAvec Fabien Florenza.\n\nEn direct à 18 h (heure de Paris). 
+ Votre lien de connexion personnel est dans l'email « Votre inscription au
+  challenge est confirmée ».\n\nRappels et infos dans le groupe WhatsApp 
+ : https://ddb.best/whatsapp-if
 LOCATION:En ligne
 URL:https://ddb.best/whatsapp-if
 STATUS:CONFIRMED
@@ -138,18 +147,20 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:challenge-if-oct2026-j5@daronsdubiz.com
-DTSTAMP:20261002T060611Z
+DTSTAMP:20261002T062114Z
 CREATED:20260912T150743Z
-LAST-MODIFIED:20261002T060611Z
-SEQUENCE:3
+LAST-MODIFIED:20261002T062114Z
+SEQUENCE:4
 DTSTART;TZID=Europe/Paris:20261008T180000
 DTEND;TZID=Europe/Paris:20261008T210000
-SUMMARY:Challenge Intelligence Financière (en direct)
-DESCRIPTION:5 soirées en direct\, du dimanche 4 au jeudi 8 octobre\, à 18
-  h (heure de Paris)\, avec Alexandre Roth et Fabien Blot.\n\nVotre lien de
-  connexion personnel est dans l'email « Votre inscription au challenge es
- t confirmée ».\n\nRappels et infos dans le groupe WhatsApp : https://ddb
- .best/whatsapp-if
+SUMMARY:Challenge Intelligence Financière · Jour 5 · Votre plan pour 202
+ 7 : faites grandir votre patrimoine et gagnez en liberté
+DESCRIPTION:Repartez avec un plan clair pour les 90 prochains jours et déc
+ ouvrez comment nos coachs spécialisés peuvent vous aider à concrétiser
+  vos projets.\n\nAvec Alexandre Roth et Fabien Blot.\n\nEn direct à 18 h 
+ (heure de Paris). Votre lien de connexion personnel est dans l'email « Vo
+ tre inscription au challenge est confirmée ».\n\nRappels et infos dans l
+ e groupe WhatsApp : https://ddb.best/whatsapp-if
 LOCATION:En ligne
 URL:https://ddb.best/whatsapp-if
 STATUS:CONFIRMED
